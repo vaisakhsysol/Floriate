@@ -1,0 +1,316 @@
+@import './variables';
+
+*{
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.navBar{
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 64px;
+
+    .navBarLeft{
+        color: $secondaryColor;
+    }
+
+    .navBarMiddle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: map-get($FontSize, regular );
+            font-family: 'Hind Siliguri', sans-serif;
+            text-align: center;
+            margin: 0px;
+    
+        }
+        svg{
+            cursor: pointer;
+        }
+    }
+}
+
+.newsandevents{
+    display: flex;
+    width: 100%;
+    background-color: $accentColor;
+    padding: 10px;
+
+    marquee{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: map-get($FontSize, regular);
+
+        svg{
+            margin: 0;
+        }
+    }
+}
+
+.heroContainer{
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .heroHeading{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .yellowBar {
+            height: 30px;
+            width: 0; /* Start with zero width */
+            padding: 10px;
+            background-color: $accentColor;
+            position: relative;
+            top: -170px;
+            z-index: -1;
+            transition: width 1s ease; /* Add a transition for smooth width change */
+        }
+
+        .heading{
+            text-align: center;
+            width: 50%;
+            font-size: map-get($FontSize, headingBig );
+            color: $textColor;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 70px;
+
+        }
+
+        .headingMiddle{
+            width: 40%;
+            text-align: center;
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: map-get($FontSize, regular );
+
+            .buttonContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .contactUsBtn{
+                    padding: 15px;
+                    width: 160px;
+                    margin-top: 24px;
+                    background-color: $secondaryColor;
+                    color: $primaryColor;
+                    border-radius: 50px;
+                    border: none;
+                    z-index: 1;
+                    font-family: 'Hind Siliguri', sans-serif;
+
+                    
+                    // &:hover{
+                    //    background-color: #004c53ba;
+                    // }
+
+                }
+
+                .contactUsBtnBackground{
+                    padding: 15px;
+                    width: 160px;
+                    margin-top: 24px;
+                    background-color: $textColor;
+                    color: $accentColor;
+                    border-radius: 50px;
+                    border: none;
+                    position: relative;
+                    top: -75px;
+                    left: 4px;
+                    
+            
+                }
+
+                .leafBtn{
+                    position: relative;
+                    top: -115px;
+                    right: -55px;
+                }
+                
+
+                &:hover{
+                    .contactUsBtnBackground{
+                
+                        position: relative;
+                        top: -68px;
+                        left: 4px;
+                        transition: all 0.3s ease-in;
+                    }
+
+                    .leafBtn{
+                        position: relative;
+                        top: -150px;
+                        right: -90px;
+                        transition: all 0.5s ease-in;
+                    }
+                }
+            }
+        }  
+
+    }
+
+}
+
+.heroKidsContainer{
+    width: 100%;
+
+    .kidsSection{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 260px;
+        
+        img{
+            width: 250px;
+        }
+
+        .heroKidOne{
+            position: relative;
+            top: -200px;
+            animation: move 10s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        
+
+        .heroKidTwo{
+            animation: move 5s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        .heroKidThree{
+            animation: move 12s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(20px)}
+                50% {transform: translateY(20px)}
+            }
+        }
+
+        .heroKidFour{
+            position: relative;
+            top: -250px;
+            animation: move 8s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+    }
+    
+}
+
+.dotsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 128px;
+
+    .greenDot{
+        padding: 5px;
+        background-color: #D45796;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+        top: -800px;
+    }
+
+    .blueDot{
+        padding: 5px;
+        background-color: #C98D18;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        position: relative;
+        top: -700px;
+        border: none;
+    }
+
+    .redDot{
+        padding: 5px;
+        background-color: #0144AD;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        position: relative;
+        top: -500px;
+    }
+
+    .greenDotTwo{
+        padding: 5px;
+        background-color: #D45796;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        position: relative;
+        top: -550px;
+    }
+
+
+    .blueDotTwo{
+        padding: 5px;
+        background-color: #C98D18;
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        position: relative;
+        top: -850px;
+    }
+
+    .redDotTwo{
+        padding: 5px;
+        background-color: #0144AD;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: -350px;
+    }
+
+    .greenDotThree{
+        padding: 5px;
+        background-color: #D45796;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: -300px;
+    }
+
+    .blueDotThree{
+        padding: 5px;
+        background-color: #C98D18;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: -200px;
+    }
+}
