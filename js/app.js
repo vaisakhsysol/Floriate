@@ -1,4 +1,8 @@
 
+
+let screenWidth = window.innerWidth
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const yellowBar = document.querySelector('.yellowBar');
     const finalWidth = yellowBar.clientWidth + 680;
@@ -6,3 +10,25 @@ document.addEventListener("DOMContentLoaded", function() {
         yellowBar.style.width = finalWidth + 'px';
     }, 100); 
 });
+
+
+if (screenWidth == 1440) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const yellowBar = document.querySelector('.yellowBar');
+        const finalWidth = yellowBar.clientWidth + 550;
+        setTimeout(function() {
+            yellowBar.style.width = finalWidth + 'px';
+        }, 100); 
+    });
+}
+
+if (screenWidth == 1366) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const yellowBar = document.querySelector('.yellowBar');
+        const finalWidth = yellowBar.clientWidth + 530;
+        setTimeout(function() {
+            yellowBar.style.width = finalWidth + 'px';
+        }, 100); 
+    });
+}
+

@@ -79,7 +79,7 @@
             padding: 10px;
             background-color: $accentColor;
             position: relative;
-            top: -170px;
+            top: -180px;
             z-index: -1;
             transition: width 1s ease; /* Add a transition for smooth width change */
         }
@@ -87,11 +87,15 @@
         .heading{
             text-align: center;
             width: 50%;
-            font-size: map-get($FontSize, headingBig );
             color: $textColor;
             font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            line-height: 70px;
+            
+            h1{
+                font-size: map-get($FontSize, headingBig );
+                font-weight: 700;
+                 line-height: 70px;
+
+            }
 
         }
 
@@ -313,4 +317,385 @@
         position: relative;
         top: -200px;
     }
+}
+
+
+//LG Display
+
+@mixin lgDisplay {
+    @media screen and (max-width:$lgDisplay) {
+        @content;
+    }
+}
+
+@include lgDisplay{
+    .heroContainer{
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .heroHeading{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .yellowBar {
+                height: 30px;
+                width: 0; /* Start with zero width */
+                padding: 10px;
+                background-color: $accentColor;
+                position: relative;
+                top: -150px;
+                z-index: -1;
+                transition: width 1s ease; /* Add a transition for smooth width change */
+            }
+    
+            .heading{
+                text-align: center;
+                width: 50%;
+                color: $textColor;
+                font-family: 'Montserrat', sans-serif;
+                
+                h1{
+                    font-size: map-get($FontSize, veryBig );
+                    font-weight: 700;
+                    line-height: 60px;
+    
+                }
+    
+            }
+    
+            .headingMiddle{
+                width: 40%;
+                text-align: center;
+                font-family: 'Hind Madurai', sans-serif;
+                font-size: map-get($FontSize, regular );
+    
+                .buttonContainer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .contactUsBtn{
+                        padding: 15px;
+                        width: 160px;
+                        margin-top: 24px;
+                        background-color: $secondaryColor;
+                        color: $primaryColor;
+                        border-radius: 50px;
+                        border: none;
+                        z-index: 1;
+                        font-family: 'Hind Siliguri', sans-serif;
+    
+                        
+                        // &:hover{
+                        //    background-color: #004c53ba;
+                        // }
+    
+                    }
+    
+                    .contactUsBtnBackground{
+                        padding: 15px;
+                        width: 160px;
+                        margin-top: 24px;
+                        background-color: $textColor;
+                        color: $accentColor;
+                        border-radius: 50px;
+                        border: none;
+                        position: relative;
+                        top: -75px;
+                        left: 4px;
+                        
+                
+                    }
+    
+                    .leafBtn{
+                        position: relative;
+                        top: -115px;
+                        right: -55px;
+                    }
+                    
+    
+                    &:hover{
+                        .contactUsBtnBackground{
+                    
+                            position: relative;
+                            top: -68px;
+                            left: 4px;
+                            transition: all 0.3s ease-in;
+                        }
+    
+                        .leafBtn{
+                            position: relative;
+                            top: -150px;
+                            right: -90px;
+                            transition: all 0.5s ease-in;
+                        }
+                    }
+                }
+            }  
+    
+        }
+
+        
+    
+.heroKidsContainer{
+    width: 100%;
+
+    .kidsSection{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 120px;
+        
+        img{
+            width: 200px;
+        }
+
+        .heroKidOne{
+            position: relative;
+            top: -200px;
+            animation: move 10s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        
+
+        .heroKidTwo{
+
+            position: relative;
+            top: -50px;
+
+            animation: move 5s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        .heroKidThree{
+
+            position: relative;
+            top: -100px;
+
+            animation: move 12s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(20px)}
+                50% {transform: translateY(20px)}
+            }
+        }
+
+        .heroKidFour{
+            position: relative;
+            top: -250px;
+            animation: move 8s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+    }
+    
+}
+}
+}
+
+
+
+//MDLG Display
+
+@mixin mdlDisplay {
+    @media screen and (max-width:$mdlDisplay) {
+        @content;
+    }
+}
+
+@include mdlDisplay{
+    .heroContainer{
+        padding: 32px 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .heroHeading{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .yellowBar {
+                height: 30px;
+                width: 0; /* Start with zero width */
+                padding: 10px;
+                background-color: $accentColor;
+                position: relative;
+                top: -160px;
+                z-index: -1;
+                transition: width 1s ease; /* Add a transition for smooth width change */
+            }
+    
+            .heading{
+                text-align: center;
+                width: 50%;
+                color: $textColor;
+                font-family: 'Montserrat', sans-serif;
+                
+                h1{
+                    font-size: map-get($FontSize, veryBig );
+                    font-weight: 700;
+                    line-height: 60px;
+    
+                }
+    
+            }
+    
+            .headingMiddle{
+                width: 40%;
+                text-align: center;
+                font-family: 'Hind Madurai', sans-serif;
+                font-size: map-get($FontSize, regular );
+
+                p{
+                    font-size: map-get($FontSize, regular );
+                }
+    
+                .buttonContainer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .contactUsBtn{
+                        padding: 10px;
+                        width: 160px;
+                        margin-top: 24px;
+                        background-color: $secondaryColor;
+                        color: $primaryColor;
+                        border-radius: 50px;
+                        border: none;
+                        z-index: 1;
+                        font-family: 'Hind Siliguri', sans-serif;
+                    }
+    
+                    .contactUsBtnBackground{
+                        padding: 10px;
+                        width: 160px;
+                        margin-top: 24px;
+                        background-color: $textColor;
+                        color: $accentColor;
+                        border-radius: 50px;
+                        border: none;
+                        position: relative;
+                        top: -65px;
+                        left: 4px;
+                    }
+    
+                    .leafBtn{
+                        position: relative;
+                        top: -110px;
+                        right: -55px;
+                    }
+                    
+    
+                    &:hover{
+                        .contactUsBtnBackground{
+                    
+                            position: relative;
+                            top: -68px;
+                            left: 4px;
+                            transition: all 0.3s ease-in;
+                        }
+    
+                        .leafBtn{
+                            position: relative;
+                            top: -138px;
+                            right: -90px;
+                            transition: all 0.5s ease-in;
+                        }
+                    }
+                }
+            }  
+    
+        }
+
+        
+    
+.heroKidsContainer{
+    width: 100%;
+
+    .kidsSection{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 120px;
+        
+        img{
+            width: 200px;
+        }
+
+        .heroKidOne{
+            position: relative;
+            top: -200px;
+            animation: move 10s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        
+
+        .heroKidTwo{
+
+            position: relative;
+            top: -50px;
+
+            animation: move 5s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        .heroKidThree{
+
+            position: relative;
+            top: -100px;
+
+            animation: move 12s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(20px)}
+                50% {transform: translateY(20px)}
+            }
+        }
+
+        .heroKidFour{
+            position: relative;
+            top: -250px;
+            animation: move 8s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+    }
+
+}
+}
 }

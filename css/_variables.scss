@@ -15,11 +15,12 @@ $FontSize : (
     "medium"  : 20px,
     "big" : 30px,
     "veryBig" : 50px,
-    "headingBig" : 60px
+    "headingBig" : 60px,
 );
 
 // Display Sizes
-
+$lgDisplay:1440px;
+$mdlDisplay:1366px;
 $mdDisplay : 1024px;
 $tabDisplay : 768px;
 $mobileDisplay : 500px;
