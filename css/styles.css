@@ -585,4 +585,82 @@
       transform: translateY(90px);
     }
   }
+  .dotsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 128px;
+  }
+  .dotsContainer .greenDot {
+    padding: 5px;
+    background-color: #D45796;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: -700px;
+  }
+  .dotsContainer .blueDot {
+    padding: 5px;
+    background-color: #C98D18;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+    top: -600px;
+    border: none;
+  }
+  .dotsContainer .redDot {
+    padding: 5px;
+    background-color: #0144AD;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    position: relative;
+    top: -420px;
+  }
+  .dotsContainer .greenDotTwo {
+    padding: 5px;
+    background-color: #D45796;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: -450px;
+  }
+  .dotsContainer .blueDotTwo {
+    padding: 5px;
+    background-color: #C98D18;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    position: relative;
+    top: -850px;
+  }
+  .dotsContainer .redDotTwo {
+    padding: 5px;
+    background-color: #0144AD;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -350px;
+  }
+  .dotsContainer .greenDotThree {
+    padding: 5px;
+    background-color: #D45796;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -300px;
+  }
+  .dotsContainer .blueDotThree {
+    padding: 5px;
+    background-color: #C98D18;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -200px;
+  }
 }/*# sourceMappingURL=styles.css.map */
