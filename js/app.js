@@ -32,3 +32,12 @@ if (screenWidth == 1366) {
     });
 }
 
+if (screenWidth == 1024) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const yellowBar = document.querySelector('.yellowBar');
+        const finalWidth = yellowBar.clientWidth + 530;
+        setTimeout(function() {
+            yellowBar.style.width = finalWidth + 'px';
+        }, 100); 
+    });
+}

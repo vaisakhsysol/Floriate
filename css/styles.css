@@ -663,4 +663,240 @@
     position: relative;
     top: -200px;
   }
+}
+@media screen and (max-width: 1024px) {
+  .heroContainer {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroContainer .heroHeading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroContainer .heroHeading .yellowBar {
+    height: 25px;
+    width: 0; /* Start with zero width */
+    padding: 10px;
+    background-color: #F0F3BD;
+    position: relative;
+    top: -160px;
+    z-index: -1;
+    transition: width 1s ease; /* Add a transition for smooth width change */
+  }
+  .heroContainer .heroHeading .heading {
+    text-align: center;
+    width: 80%;
+    color: #023684;
+    font-family: "Montserrat", sans-serif;
+  }
+  .heroContainer .heroHeading .heading h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .heroContainer .heroHeading .headingMiddle {
+    width: 60%;
+    text-align: center;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 16px;
+  }
+  .heroContainer .heroHeading .headingMiddle p {
+    font-size: 16px;
+  }
+  .heroContainer .heroHeading .headingMiddle .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroContainer .heroHeading .headingMiddle .buttonContainer .contactUsBtn {
+    padding: 10px;
+    width: 160px;
+    margin-top: 24px;
+    background-color: #006D77;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    z-index: 1;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  .heroContainer .heroHeading .headingMiddle .buttonContainer .contactUsBtnBackground {
+    padding: 10px;
+    width: 160px;
+    margin-top: 24px;
+    background-color: #023684;
+    color: #F0F3BD;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    top: -65px;
+    left: 4px;
+  }
+  .heroContainer .heroHeading .headingMiddle .buttonContainer .leafBtn {
+    position: relative;
+    top: -110px;
+    right: -55px;
+  }
+  .heroContainer .heroHeading .headingMiddle .buttonContainer:hover .contactUsBtnBackground {
+    position: relative;
+    top: -68px;
+    left: 4px;
+    transition: all 0.3s ease-in;
+  }
+  .heroContainer .heroHeading .headingMiddle .buttonContainer:hover .leafBtn {
+    position: relative;
+    top: -138px;
+    right: -90px;
+    transition: all 0.5s ease-in;
+  }
+  .heroContainer .heroKidsContainer {
+    width: 100%;
+  }
+  .heroContainer .heroKidsContainer .kidsSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+  }
+  .heroContainer .heroKidsContainer .kidsSection img {
+    width: 150px;
+  }
+  .heroContainer .heroKidsContainer .kidsSection .heroKidOne {
+    position: relative;
+    top: -200px;
+    animation: move 10s infinite;
+  }
+  @keyframes move {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(90px);
+    }
+  }
+  .heroContainer .heroKidsContainer .kidsSection .heroKidTwo {
+    position: relative;
+    top: -50px;
+    animation: move 5s infinite;
+  }
+  @keyframes move {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(90px);
+    }
+  }
+  .heroContainer .heroKidsContainer .kidsSection .heroKidThree {
+    position: relative;
+    top: -100px;
+    animation: move 12s infinite;
+  }
+  @keyframes move {
+    0%, 100% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  .heroContainer .heroKidsContainer .kidsSection .heroKidFour {
+    position: relative;
+    top: -250px;
+    animation: move 8s infinite;
+  }
+  @keyframes move {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(90px);
+    }
+  }
+  .dotsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+  }
+  .dotsContainer .greenDot {
+    padding: 5px;
+    background-color: #D45796;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: -500px;
+  }
+  .dotsContainer .blueDot {
+    padding: 5px;
+    background-color: #C98D18;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+    top: -600px;
+    border: none;
+  }
+  .dotsContainer .redDot {
+    padding: 5px;
+    background-color: #0144AD;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    position: relative;
+    top: -420px;
+    right: 100px;
+  }
+  .dotsContainer .greenDotTwo {
+    padding: 5px;
+    background-color: #D45796;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: -400px;
+    right: -50px;
+  }
+  .dotsContainer .blueDotTwo {
+    padding: 5px;
+    background-color: #C98D18;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: -600px;
+  }
+  .dotsContainer .redDotTwo {
+    padding: 5px;
+    background-color: #0144AD;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -350px;
+    right: -50px;
+  }
+  .dotsContainer .greenDotThree {
+    padding: 5px;
+    background-color: #D45796;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+  }
+  .dotsContainer .blueDotThree {
+    padding: 5px;
+    background-color: #C98D18;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -200px;
+  }
 }/*# sourceMappingURL=styles.css.map */
