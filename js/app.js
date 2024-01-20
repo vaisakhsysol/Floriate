@@ -61,3 +61,13 @@ if (screenWidth <= 500) {
         }, 100); 
     });
 }
+
+if (screenWidth <= 350) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const yellowBar = document.querySelector('.yellowBar');
+        const finalWidth = yellowBar.clientWidth + 200;
+        setTimeout(function() {
+            yellowBar.style.width = finalWidth + 'px';
+        }, 100); 
+    });
+}

@@ -1679,3 +1679,311 @@
     }
 }
 }
+
+//Small Mobile Display
+
+@mixin smallMobileDisplay {
+    @media screen and (max-width:$smallMobileDisplay) {
+        @content;
+    }
+}
+
+@include smallMobileDisplay{
+
+
+    .navBar{
+        padding: 5px 10px;
+        .navBarLeft{
+            display: none;
+        }
+
+        .navBarMiddle{
+            img{
+                width: 150px;
+            }
+            p{
+                font-size: map-get($FontSize, small );
+            }
+           
+        }
+    }
+    
+    .newsandevents{
+        marquee{
+            font-size: map-get($FontSize, small );
+            margin-right: 12px;
+        }
+    }
+    
+    .heroContainer{
+        margin-top: 16px;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .heroHeading{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .yellowBar {
+                height: 15px;
+                width: 0px; /* Start with zero width */
+                padding: 10px;
+                background-color: $accentColor;
+                position: relative;
+                top: -85px;
+                z-index: -1;
+                transition: width 1s ease; /* Add a transition for smooth width change */
+            }
+    
+            .heading{
+                text-align: center;
+                width: 100%;
+                color: $textColor;
+                font-family: 'Montserrat', sans-serif;
+                
+                h1{
+                    font-size: map-get($FontSize, medium );
+                    font-weight: 700;
+                    line-height: 30px;
+    
+                }
+    
+            }
+    
+            .headingMiddle{
+                width: 90%;
+                text-align: center;
+                font-family: 'Hind Madurai', sans-serif;
+                font-size: map-get($FontSize, regular );
+
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+    
+                .buttonContainer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .contactUsBtn{
+                        padding: 10px;
+                        width: 100px;
+                        margin-top: 24px;
+                        background-color: $secondaryColor;
+                        color: $primaryColor;
+                        border-radius: 50px;
+                        border: none;
+                        z-index: 1;
+                        font-size: map-get($FontSize, small );
+                        font-family: 'Hind Siliguri', sans-serif;
+                    }
+    
+                    .contactUsBtnBackground{
+                        padding: 10px;
+                        width: 100px;
+                        margin-top: 24px;
+                        background-color: $textColor;
+                        color: $accentColor;
+                        border-radius: 50px;
+                        border: none;
+                        position: relative;
+                        top: -60px;
+                        left: 4px;
+                        font-size: map-get($FontSize, small );
+
+                    }
+    
+                    .leafBtn{
+                        position: relative;
+                        top: -100px;
+                        right: -30px;
+                    }
+                    
+    
+                    &:hover{
+                        .contactUsBtnBackground{
+                    
+                            position: relative;
+                            top: -70px;
+                            left: 4px;
+                            transition: all 0.3s ease-in;
+                        }
+    
+                        .leafBtn{
+                            position: relative;
+                            top: -130px;
+                            right: -50px;
+                            transition: all 0.5s ease-in;
+                        }
+                    }
+                }
+            }  
+    
+        }
+
+        
+    
+.heroKidsContainer{
+    width: 100%;
+
+    .kidsSection{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        
+        img{
+            width: 60px;
+        }
+
+        .heroKidOne{
+            position: relative;
+            top: -200px;
+            animation: move 10s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+
+        
+
+        .heroKidTwo{
+
+            position: relative;
+            top: -100px;
+
+            animation: move 9s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(50px)}
+            }
+        }
+
+        .heroKidThree{
+
+            position: relative;
+            top: -100px;
+
+            animation: move 12s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(20px)}
+                50% {transform: translateY(20px)}
+            }
+        }
+
+        .heroKidFour{
+            position: relative;
+            top: -200px;
+            animation: move 8s infinite;
+
+            @keyframes move {
+                0%, 100% {transform: translateY(0)}
+                50% {transform: translateY(90px)}
+            }
+        }
+    }
+
+}
+}
+
+.dotsContainer{
+    display: none;
+    justify-content: space-between;
+    padding: 0 64px;
+
+    .greenDot{
+        padding: 5px;
+        background-color: #D45796;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+        top: -500px;
+    }
+
+    .blueDot{
+        padding: 5px;
+        background-color: #C98D18;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        position: relative;
+        top: -600px;
+        border: none;
+    }
+
+    .redDot{
+        padding: 5px;
+        background-color: #0144AD;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        position: relative;
+        top: -420px;
+        right: 100px;
+    }
+
+    .greenDotTwo{
+        padding: 5px;
+        background-color: #D45796;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        position: relative;
+        top: -400px;
+        right: -50px;
+    }
+
+
+    .blueDotTwo{
+        padding: 5px;
+        background-color: #C98D18;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        position: relative;
+        top: -600px;
+    }
+
+    .redDotTwo{
+        padding: 5px;
+        background-color: #0144AD;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: -350px;
+        right: -50px;
+    }
+
+    .greenDotThree{
+        padding: 5px;
+        background-color: #D45796;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: -50px;
+    }
+
+    .blueDotThree{
+        padding: 5px;
+        background-color: #C98D18;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: -200px;
+    }
+}
+}
