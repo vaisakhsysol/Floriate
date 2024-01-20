@@ -1869,7 +1869,7 @@
             animation: move 9s infinite;
 
             @keyframes move {
-                0%, 100% {transform: translateY(0)}
+                0%, 100% {transform: translateY(100px)}
                 50% {transform: translateY(50px)}
             }
         }
