@@ -41,3 +41,13 @@ if (screenWidth == 1024) {
         }, 100); 
     });
 }
+
+if (screenWidth == 768) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const yellowBar = document.querySelector('.yellowBar');
+        const finalWidth = yellowBar.clientWidth + 530;
+        setTimeout(function() {
+            yellowBar.style.width = finalWidth + 'px';
+        }, 100); 
+    });
+}
