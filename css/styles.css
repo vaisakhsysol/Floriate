@@ -15,6 +15,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 64px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 .navBar .navBarLeft {
   color: #006D77;
@@ -36,6 +40,7 @@
 }
 
 .newsandevents {
+  margin-top: 97px;
   display: flex;
   width: 100%;
   background-color: #F0F3BD;
@@ -912,6 +917,9 @@
   }
   .navBar .navBarMiddle p {
     font-size: 12px;
+  }
+  .newsandevents {
+    margin-top: 60px;
   }
   .newsandevents marquee {
     font-size: 12px;

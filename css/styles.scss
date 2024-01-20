@@ -17,6 +17,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 64px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
 
     .navBarLeft{
         color: $secondaryColor;
@@ -41,6 +46,7 @@
 }
 
 .newsandevents{
+    margin-top: 97px;
     display: flex;
     width: 100%;
     background-color: $accentColor;
@@ -1100,6 +1106,7 @@
     }
     
     .newsandevents{
+        margin-top: 60px;
         marquee{
             font-size: map-get($FontSize, small );
         }
@@ -1859,7 +1866,6 @@
 
             position: relative;
             top: -100px;
-
             animation: move 9s infinite;
 
             @keyframes move {
