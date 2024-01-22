@@ -529,6 +529,44 @@
     }
 }
 
+.newsAndEventsContainer{
+    padding: 0 64px;
+    
+    .newsAndEventsHeading{
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            margin-top: 88px;
+        } 
+    }
+
+    .newsContainerMain{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        justify-content: space-between;
+
+
+        .newsContainer{
+            img{
+                width: 600px;
+                filter: brightness(50%);
+                border-radius: 15px;
+            }
+
+
+            .headingAndPara{
+                position: relative;
+                top: -140px;
+                color: $primaryColor;
+                left: 24px;
+            }
+        }
+    }
+}
+
 
 
 
