@@ -396,7 +396,7 @@
   text-align: center;
   padding: 10px;
   background-color: #FAFAFA;
-  border-radius: 5px;
+  border-radius: 25px;
   border: 1px solid rgb(222, 222, 222);
 }
 .extraActivitiesContainer .extraActivities .activities img {
@@ -425,6 +425,35 @@
   color: #ffffff;
   border-radius: 25px;
   width: 150px;
+}
+.extraActivitiesContainer .extraActivities .activities:hover {
+  scale: 1.02;
+  transition: 0.5s ease-in-out;
+}
+
+.gallerySectionContainer {
+  padding: 0 64px;
+}
+.gallerySectionContainer .extraActivitiesHeading h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #023684;
+  font-weight: 800;
+  margin-top: 88px;
+}
+.gallerySectionContainer .gallary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+  justify-content: space-between;
+}
+.gallerySectionContainer .gallary img {
+  margin-top: 32px;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1950,7 +1979,7 @@
     width: 100%;
   }
   .extraActivitiesContainer {
-    padding: 0 64px;
+    padding: 0 16px;
   }
   .extraActivitiesContainer .extraActivitiesHeading h3 {
     text-transform: uppercase;
@@ -2000,6 +2029,12 @@
     color: #ffffff;
     border-radius: 25px;
     width: 150px;
+  }
+  .gallerySectionContainer {
+    padding: 0 16px;
+  }
+  .gallerySectionContainer .gallary img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
