@@ -337,6 +337,96 @@
   font-size: 16px;
 }
 
+.featuresContainer {
+  margin-top: 128px;
+  padding: 0 64px;
+  margin-top: 128px;
+}
+.featuresContainer .featuresContainerHeading h3 {
+  text-align: center;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  color: #023684;
+}
+.featuresContainer .featureOne {
+  margin-top: 88px;
+  display: flex;
+  gap: 100px;
+}
+.featuresContainer .featureOne .featureOneLeft h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  color: #023684;
+  width: 90%;
+}
+.featuresContainer .featureOne .featureOneLeft p {
+  width: 90%;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: "Hind Siliguri", sans-serif;
+  margin-top: 48px;
+  color: #313131;
+  font-weight: 500;
+}
+.featuresContainer .featureOne .featureOneRight img {
+  width: 800px;
+}
+
+.extraActivitiesContainer {
+  padding: 0 64px;
+}
+.extraActivitiesContainer .extraActivitiesHeading h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #023684;
+  font-weight: 800;
+  margin-top: 88px;
+}
+.extraActivitiesContainer .extraActivities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+  justify-content: space-between;
+}
+.extraActivitiesContainer .extraActivities .activities {
+  margin-top: 48px;
+  max-width: 350px;
+  text-align: center;
+  padding: 10px;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  border: 1px solid rgb(222, 222, 222);
+}
+.extraActivitiesContainer .extraActivities .activities img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+}
+.extraActivitiesContainer .extraActivities .activities .activityName {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #023684;
+}
+.extraActivitiesContainer .extraActivities .activities .activityDesc {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.extraActivitiesContainer .extraActivities .activities button {
+  margin-top: 24px;
+  padding: 10px;
+  border: none;
+  background-color: #023684;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 150px;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -1858,6 +1948,58 @@
   }
   .featuresContainer .featureOne .featureOneRight img {
     width: 100%;
+  }
+  .extraActivitiesContainer {
+    padding: 0 64px;
+  }
+  .extraActivitiesContainer .extraActivitiesHeading h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #023684;
+    font-weight: 800;
+    margin-top: 88px;
+  }
+  .extraActivitiesContainer .extraActivities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .extraActivitiesContainer .extraActivities .activities {
+    margin-top: 48px;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    border: 1px solid rgb(222, 222, 222);
+  }
+  .extraActivitiesContainer .extraActivities .activities img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+  }
+  .extraActivitiesContainer .extraActivities .activities .activityName {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #023684;
+  }
+  .extraActivitiesContainer .extraActivities .activities .activityDesc {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .extraActivitiesContainer .extraActivities .activities button {
+    margin-top: 24px;
+    padding: 10px;
+    border: none;
+    background-color: #023684;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 150px;
   }
 }
 @media screen and (max-width: 320px) {

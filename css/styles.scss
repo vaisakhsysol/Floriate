@@ -386,9 +386,116 @@
         }
     
     }
-    
-    
+
 }
+
+.featuresContainer{
+    margin-top: 128px;
+    padding: 0 64px;
+    margin-top: 128px;
+    .featuresContainerHeading{
+        h3{
+            text-align: center;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            color: $textColor;
+        }
+    }
+
+    .featureOne{
+        margin-top: 88px;
+        display: flex;
+        gap: 100px;
+        .featureOneLeft{
+            h2{
+                font-size: map-get($FontSize, veryBig );
+                text-transform: uppercase;
+                font-weight: 800;
+                font-family: 'Montserrat', sans-serif;
+                color: $textColor;
+                width: 90%;
+
+            }
+
+            p{
+                width: 90%;
+                font-size: map-get($FontSize, medium );
+                line-height: 40px;
+                font-family: 'Hind Siliguri', sans-serif;
+                margin-top: 48px;
+                color: $textColorSecondary;
+                font-weight: 500;
+            }
+        }
+
+        .featureOneRight{
+            img{
+                width: 800px;
+            }
+        }
+    }
+
+}
+
+.extraActivitiesContainer{
+    padding: 0 64px;
+    .extraActivitiesHeading{
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            margin-top: 88px;
+        } 
+    }
+    .extraActivities{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 12px;
+        justify-content: space-between;
+
+        .activities{
+            margin-top: 48px;
+            max-width: 350px;
+            text-align: center;
+            padding: 10px;
+            background-color: #FAFAFA;
+            border-radius: 5px;
+            border: 1px solid rgb(222, 222, 222);
+            img{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 10px;
+                height: 180px;
+            }
+
+            .activityName{
+                margin-top: 8px;
+                font-weight: 700;
+                font-size: map-get($FontSize, medium );
+                color: $textColor;
+            }
+
+            .activityDesc{
+                margin-top: 8px;
+                font-weight: 500;
+                font-size: map-get($FontSize, regular );
+            }
+
+            button{
+                margin-top: 24px;
+                padding: 10px;
+                border: none;
+                background-color: $textColor;
+                color: $primaryColor;
+                border-radius: 25px;
+                width: 150px;
+            }
+            
+        }
+    }
+}
+
 
 
 
@@ -2273,6 +2380,64 @@
     }
 }
 
+.extraActivitiesContainer{
+    padding: 0 64px;
+    .extraActivitiesHeading{
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            margin-top: 88px;
+        } 
+    }
+    .extraActivities{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 12px;
+        justify-content: space-between;
+
+        .activities{
+            margin-top: 48px;
+            max-width: 350px;
+            text-align: center;
+            padding: 10px;
+            background-color: #FAFAFA;
+            border-radius: 5px;
+            border: 1px solid rgb(222, 222, 222);
+            img{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 10px;
+                height: 180px;
+            }
+
+            .activityName{
+                margin-top: 8px;
+                font-weight: 700;
+                font-size: map-get($FontSize, regular );
+                color: $textColor;
+            }
+
+            .activityDesc{
+                margin-top: 8px;
+                font-weight: 500;
+                font-size: map-get($FontSize, small );
+            }
+
+            button{
+                margin-top: 24px;
+                padding: 10px;
+                border: none;
+                background-color: $textColor;
+                color: $primaryColor;
+                border-radius: 25px;
+                width: 150px;
+            }
+            
+        }
+    }
+}
 
 }
 
