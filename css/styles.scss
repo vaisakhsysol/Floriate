@@ -430,7 +430,7 @@
 
         .featureOneRight{
             img{
-                width: 800px;
+                width: 710px;
             }
         }
     }
@@ -551,7 +551,7 @@
 
         .newsContainer{
             img{
-                width: 600px;
+                width: 98%;
                 filter: brightness(50%);
                 border-radius: 15px;
             }
@@ -563,12 +563,86 @@
                 top: -140px;
                 color: $primaryColor;
                 left: 24px;
+                width: 80%;
             }
         }
     }
+
+    
+    
 }
 
+.contactBarContainer{
+    // padding: 0 64px;
+    margin: 0 64px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $textColorSecondary;
+    border-radius: 12px;
 
+    .contactNumber{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 56px;
+
+
+        svg{
+            padding: 10px;
+            background-color: $primaryColor;
+            border-radius: 5px;
+
+        }
+        p{
+            color: $primaryColor;
+            margin: 0;
+            margin-left: 12px;
+            font-size: map-get($FontSize, big);
+            font-family: 'Hind Siliguri', sans-serif;
+
+        }
+    }
+
+    .contactEmail{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-right: 56px;
+
+
+        svg{
+            padding: 10px;
+            background-color: $primaryColor;
+            border-radius: 5px;
+
+        }
+        p{
+            color: $primaryColor;
+            margin: 0;
+            margin-left: 12px;
+            font-size: map-get($FontSize, big);
+            font-family: 'Hind Siliguri', sans-serif;
+
+        }
+    }    
+}
+.newsAndEventsLoadMoreBtn{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+    button{
+        margin-bottom: 80px;
+        background-color: $textColor;
+        padding: 10px;
+        color: $primaryColor;
+        border: none;
+        border-radius: 25px;
+        width: 150px;
+        
+
+    }
+}
 
 
 
@@ -2027,6 +2101,169 @@
 }
 
 
+.contactBarContainer{
+    // padding: 0 64px;
+    margin: 0 64px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    background-color: $textColorSecondary;
+    border-radius: 12px;
+
+    .contactNumber{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+
+
+        svg{
+            padding: 10px;
+            background-color: $primaryColor;
+            border-radius: 5px;
+
+        }
+        p{
+            color: $primaryColor;
+            margin: 0;
+            margin-left: 12px;
+            font-size: map-get($FontSize, medium);
+            font-family: 'Hind Siliguri', sans-serif;
+
+        }
+    }
+
+    .contactEmail{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        // margin-right: 56px;
+
+
+        svg{
+            padding: 10px;
+            background-color: $primaryColor;
+            border-radius: 5px;
+
+        }
+        p{
+            color: $primaryColor;
+            margin: 0;
+            margin-left: 12px;
+            font-size: map-get($FontSize, medium);
+            font-family: 'Hind Siliguri', sans-serif;
+
+        }
+    }    
+}
+
+
+.newsAndEventsContainer{
+    padding: 0 16px;
+    
+    .newsAndEventsHeading{
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            margin-top: 88px;
+        } 
+    }
+
+    .newsContainerMain{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-content: space-between;
+        gap: -20px;
+
+
+        .newsContainer{
+            img{
+                width: 98%;
+                filter: brightness(50%);
+                border-radius: 15px;
+            }
+
+
+            .headingAndPara{
+                font-family: 'Hind Madurai', sans-serif;
+                position: relative;
+                top: -110px;
+                color: $primaryColor;
+                left: 24px;
+                width: 80%;
+
+                h5{
+                    font-size: map-get($FontSize, regular );
+                }
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+            }
+        }
+    }
+
+}
+
+
+.contactBarContainer{
+    // padding: 0 64px;
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    background-color: $textColorSecondary;
+    border-radius: 12px;
+
+    .contactNumber{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+
+
+        svg{
+            padding: 10px;
+            background-color: $primaryColor;
+            border-radius: 5px;
+
+        }
+        p{
+            color: $primaryColor;
+            margin: 0;
+            margin-left: 12px;
+            font-size: map-get($FontSize, regular);
+            font-family: 'Hind Siliguri', sans-serif;
+
+        }
+    }
+
+    .contactEmail{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        // margin-right: 56px;
+
+
+        svg{
+            padding: 10px;
+            background-color: $primaryColor;
+            border-radius: 5px;
+
+        }
+        p{
+            color: $primaryColor;
+            margin: 0;
+            margin-left: 12px;
+            font-size: map-get($FontSize, regular);
+            font-family: 'Hind Siliguri', sans-serif;
+
+        }
+    }    
+}
+
 }
 
 
@@ -2131,6 +2368,7 @@
                         color: $primaryColor;
                         border-radius: 50px;
                         border: none;
+                        font-size: map-get($FontSize, small );
                         z-index: 1;
                         font-family: 'Hind Siliguri', sans-serif;
                     }
@@ -2391,7 +2629,7 @@
                     padding:0 16px;
                     color: $primaryColor;
                     text-align: center;
-                    line-height: 18px;
+                    line-height: 14px;
                     font-size: xx-small
 
                 }
@@ -2503,6 +2741,7 @@
                 padding: 10px;
                 border: none;
                 background-color: $textColor;
+                font-size: map-get($FontSize, small );
                 color: $primaryColor;
                 border-radius: 25px;
                 width: 150px;
@@ -2516,8 +2755,67 @@
     padding: 0 16px;
 
     .gallary{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 4px;
+        justify-content: space-between;
         img{
             width: 100%;
+        }
+    }
+}
+
+
+.newsAndEventsContainer{
+    padding: 0 16px;
+    
+    .newsAndEventsHeading{
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            margin-top: 88px;
+        } 
+    }
+
+    .newsContainerMain{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: space-between;
+        gap: -20px;
+
+
+        .newsContainer{
+            img{
+                width: 98%;
+                filter: brightness(50%);
+                border-radius: 15px;
+            }
+
+
+            .headingAndPara{
+                font-family: 'Hind Madurai', sans-serif;
+                position: relative;
+                top: -120px;
+                color: $primaryColor;
+                left: 24px;
+                width: 85%;
+
+                h5{
+                    font-size: map-get($FontSize, regular );
+                }
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+            }
+        }
+    }
+
+    .newsAndEventsLoadMoreBtn{
+        button{
+            font-size: map-get($FontSize, small );
         }
     }
 }

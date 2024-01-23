@@ -371,7 +371,7 @@
   font-weight: 500;
 }
 .featuresContainer .featureOne .featureOneRight img {
-  width: 800px;
+  width: 710px;
 }
 
 .extraActivitiesContainer {
@@ -473,7 +473,7 @@
   justify-content: space-between;
 }
 .newsAndEventsContainer .newsContainerMain .newsContainer img {
-  width: 600px;
+  width: 98%;
   filter: brightness(50%);
   border-radius: 15px;
 }
@@ -483,6 +483,66 @@
   top: -140px;
   color: #ffffff;
   left: 24px;
+  width: 80%;
+}
+
+.contactBarContainer {
+  margin: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #313131;
+  border-radius: 12px;
+}
+.contactBarContainer .contactNumber {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 56px;
+}
+.contactBarContainer .contactNumber svg {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.contactBarContainer .contactNumber p {
+  color: #ffffff;
+  margin: 0;
+  margin-left: 12px;
+  font-size: 30px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.contactBarContainer .contactEmail {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 56px;
+}
+.contactBarContainer .contactEmail svg {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.contactBarContainer .contactEmail p {
+  color: #ffffff;
+  margin: 0;
+  margin-left: 12px;
+  font-size: 30px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.newsAndEventsLoadMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsAndEventsLoadMoreBtn button {
+  margin-bottom: 80px;
+  background-color: #023684;
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  width: 150px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1662,6 +1722,126 @@
   .featuresContainer .featureOne .featureOneRight img {
     width: 580px;
   }
+  .contactBarContainer {
+    margin: 0 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    border-radius: 12px;
+  }
+  .contactBarContainer .contactNumber {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .contactBarContainer .contactNumber svg {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .contactBarContainer .contactNumber p {
+    color: #ffffff;
+    margin: 0;
+    margin-left: 12px;
+    font-size: 20px;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  .contactBarContainer .contactEmail {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .contactBarContainer .contactEmail svg {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .contactBarContainer .contactEmail p {
+    color: #ffffff;
+    margin: 0;
+    margin-left: 12px;
+    font-size: 20px;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  .newsAndEventsContainer {
+    padding: 0 16px;
+  }
+  .newsAndEventsContainer .newsAndEventsHeading h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #023684;
+    font-weight: 800;
+    margin-top: 88px;
+  }
+  .newsAndEventsContainer .newsContainerMain {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: space-between;
+    gap: -20px;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer img {
+    width: 98%;
+    filter: brightness(50%);
+    border-radius: 15px;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer .headingAndPara {
+    font-family: "Hind Madurai", sans-serif;
+    position: relative;
+    top: -110px;
+    color: #ffffff;
+    left: 24px;
+    width: 80%;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer .headingAndPara h5 {
+    font-size: 16px;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer .headingAndPara p {
+    font-size: 12px;
+  }
+  .contactBarContainer {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    border-radius: 12px;
+  }
+  .contactBarContainer .contactNumber {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .contactBarContainer .contactNumber svg {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .contactBarContainer .contactNumber p {
+    color: #ffffff;
+    margin: 0;
+    margin-left: 12px;
+    font-size: 16px;
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  .contactBarContainer .contactEmail {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .contactBarContainer .contactEmail svg {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .contactBarContainer .contactEmail p {
+    color: #ffffff;
+    margin: 0;
+    margin-left: 12px;
+    font-size: 16px;
+    font-family: "Hind Siliguri", sans-serif;
+  }
 }
 @media screen and (max-width: 500px) {
   .navBar {
@@ -1739,6 +1919,7 @@
     color: #ffffff;
     border-radius: 50px;
     border: none;
+    font-size: 12px;
     z-index: 1;
     font-family: "Hind Siliguri", sans-serif;
   }
@@ -1967,7 +2148,7 @@
     padding: 0 16px;
     color: #ffffff;
     text-align: center;
-    line-height: 18px;
+    line-height: 14px;
     font-size: xx-small;
   }
   .featuresContainer {
@@ -2055,6 +2236,7 @@
     padding: 10px;
     border: none;
     background-color: #023684;
+    font-size: 12px;
     color: #ffffff;
     border-radius: 25px;
     width: 150px;
@@ -2062,8 +2244,53 @@
   .gallerySectionContainer {
     padding: 0 16px;
   }
+  .gallerySectionContainer .gallary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 4px;
+    justify-content: space-between;
+  }
   .gallerySectionContainer .gallary img {
     width: 100%;
+  }
+  .newsAndEventsContainer {
+    padding: 0 16px;
+  }
+  .newsAndEventsContainer .newsAndEventsHeading h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #023684;
+    font-weight: 800;
+    margin-top: 88px;
+  }
+  .newsAndEventsContainer .newsContainerMain {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: -20px;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer img {
+    width: 98%;
+    filter: brightness(50%);
+    border-radius: 15px;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer .headingAndPara {
+    font-family: "Hind Madurai", sans-serif;
+    position: relative;
+    top: -120px;
+    color: #ffffff;
+    left: 24px;
+    width: 85%;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer .headingAndPara h5 {
+    font-size: 16px;
+  }
+  .newsAndEventsContainer .newsContainerMain .newsContainer .headingAndPara p {
+    font-size: 12px;
+  }
+  .newsAndEventsContainer .newsAndEventsLoadMoreBtn button {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 320px) {
