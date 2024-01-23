@@ -487,6 +487,8 @@
 }
 
 .newsandevents {
+  z-index: 5;
+  position: fixed;
   margin-top: 97px;
   display: flex;
   width: 100%;
