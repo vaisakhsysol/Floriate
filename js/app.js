@@ -1,7 +1,5 @@
 
-
 let screenWidth = window.innerWidth
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const yellowBar = document.querySelector('.yellowBar');
@@ -71,3 +69,12 @@ if (screenWidth <= 350) {
         }, 100); 
     });
 }
+
+let hamburger = document.querySelector('.hamburger')
+let menu = document.querySelector('.menu')
+
+hamburger.addEventListener("click",()=>{
+    menu.classList.toggle('active')
+    hamburger.classList.toggle('active')
+
+})
