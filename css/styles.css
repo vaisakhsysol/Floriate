@@ -907,6 +907,24 @@
   font-weight: 600;
 }
 
+.infraTabelContainer table {
+  margin-top: 64px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.infraTabelContainer td, .infraTabelContainer th {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+.infraTabelContainer tr:nth-child(even) {
+  background-color: #F0F3BD;
+}
+.infraTabelContainer tr:nth-child(odd) {
+  background-color: #FCFFD1;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;

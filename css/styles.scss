@@ -1088,6 +1088,28 @@ padding: 64px;
         }
     }
 }
+
+.infraTabelContainer{
+    table {
+        margin-top: 64px;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #ffffff;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: $accentColor;
+      }
+      tr:nth-child(odd) {
+        background-color: #FCFFD1;
+      }
+}
 //LG Display
 
 @mixin lgDisplay {
