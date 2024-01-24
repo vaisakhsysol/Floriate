@@ -83,6 +83,10 @@
   width: 100%;
 }
 
+.menuExStyle {
+  margin-top: -10px;
+}
+
 .heroContainer {
   margin-top: 128px;
   padding: 64px;
@@ -507,6 +511,10 @@
   margin: 0;
 }
 
+.newsandeventsExStyle {
+  margin-top: -40px;
+}
+
 .newsAndEventsContainer {
   padding: 0 64px;
 }
@@ -685,6 +693,90 @@
   color: #ffffff;
   font-size: 12px;
   font-weight: lighter;
+}
+
+.heroImageContainer {
+  margin-top: 135px;
+  background-image: url(../assets/images/schoolImage.webp);
+  background-size: cover; /* or background-size: contain; */
+  background-repeat: no-repeat;
+  height: 865px; /* Adjust the height as needed */
+  width: 100%; /* Adjust the width as needed */
+}
+.heroImageContainer .aboutTopSection {
+  width: 800px;
+  height: 500px;
+}
+.heroImageContainer .aboutTopSection .aboutInfo {
+  background-color: #ffffff;
+  padding: 10px;
+  height: 100%;
+}
+.heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo {
+  display: flex;
+  margin-top: 24px;
+  padding: 10px 32px;
+  justify-content: space-between;
+}
+.heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo p {
+  font-size: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 600;
+  width: 300px;
+  line-height: 25px;
+}
+.heroImageContainer .aboutTopSection .aboutInfo .middelAboutInfo {
+  padding: 0px 20px;
+  font-size: 50px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  color: #023684;
+  line-height: 50px;
+  width: 700px;
+}
+.heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo {
+  margin: 20px;
+  padding: 10px;
+  border: 5px solid #006D77;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 56px;
+}
+.heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo p {
+  font-family: "Hind Madurai", sans-serif;
+  padding: 24px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.heroImageContainer .aboutBottomSection {
+  margin-top: 128px;
+  float: right; /* Uncomment this line */
+  padding: 10px;
+  background-color: #ffffff;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.heroImageContainer .aboutBottomSection .heading {
+  padding: 25px;
+  background-color: #006D77;
+  color: #ffffff;
+  width: 700px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  border: 2px solid black;
+}
+.heroImageContainer .aboutBottomSection .heading p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.heroImageContainer .aboutBottomSection .aboutHeadingDescription p {
+  font-size: 16px;
+  margin-top: -32px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1246,6 +1338,90 @@
   }
   .featuresContainer .featureOne .featureOneRight img {
     width: 580px;
+  }
+  .heroImageContainer {
+    margin-top: 135px;
+    background-image: url(../assets/images/schoolImage.webp);
+    background-size: cover; /* or background-size: contain; */
+    background-repeat: no-repeat;
+    height: 865px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+  }
+  .heroImageContainer .aboutTopSection {
+    width: 800px;
+    height: 500px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo {
+    background-color: #ffffff;
+    padding: 10px;
+    height: 100%;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo {
+    display: flex;
+    margin-top: 24px;
+    padding: 10px 32px;
+    justify-content: space-between;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo p {
+    font-size: 20px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 600;
+    width: 300px;
+    line-height: 25px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .middelAboutInfo {
+    padding: 0px 20px;
+    font-size: 50px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: bold;
+    color: #023684;
+    line-height: 50px;
+    width: 700px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo {
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid #006D77;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 56px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo p {
+    font-family: "Hind Madurai", sans-serif;
+    padding: 24px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .heroImageContainer .aboutBottomSection {
+    margin-top: 128px;
+    float: right; /* Uncomment this line */
+    padding: 10px;
+    background-color: #ffffff;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .heroImageContainer .aboutBottomSection .heading {
+    padding: 25px;
+    background-color: #006D77;
+    color: #ffffff;
+    width: 650px;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    top: -40px;
+    border: 2px solid black;
+  }
+  .heroImageContainer .aboutBottomSection .heading p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .heroImageContainer .aboutBottomSection .aboutHeadingDescription p {
+    font-size: 16px;
+    margin-top: -32px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1991,6 +2167,12 @@
     font-size: 20px;
     font-family: "Hind Siliguri", sans-serif;
   }
+  .newsandeventsExStyle {
+    margin-top: -60px;
+  }
+  .menuExStyle {
+    margin-top: -32px;
+  }
   .newsAndEventsContainer {
     padding: 0 16px;
   }
@@ -2153,6 +2335,90 @@
     color: #ffffff;
     font-size: 12px;
     font-weight: lighter;
+  }
+  .heroImageContainer {
+    margin-top: 120px;
+    background-image: url(../assets/images/schoolImage.webp);
+    background-size: cover; /* or background-size: contain; */
+    background-repeat: no-repeat;
+    height: 865px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+  }
+  .heroImageContainer .aboutTopSection {
+    width: 550px;
+    height: 500px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo {
+    background-color: #ffffff;
+    padding: 10px;
+    height: 100%;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo {
+    display: flex;
+    margin-top: 24px;
+    padding: 10px 32px;
+    justify-content: space-between;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo p {
+    font-size: 16px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 600;
+    width: 200px;
+    line-height: 25px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .middelAboutInfo {
+    padding: 0px 20px;
+    font-size: 30px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: bold;
+    color: #023684;
+    line-height: 40px;
+    width: 450px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo {
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid #006D77;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 32px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo p {
+    font-family: "Hind Madurai", sans-serif;
+    padding: 24px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .heroImageContainer .aboutBottomSection {
+    margin-top: 128px;
+    float: right; /* Uncomment this line */
+    padding: 10px;
+    background-color: #ffffff;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  .heroImageContainer .aboutBottomSection .heading {
+    padding: 25px;
+    background-color: #006D77;
+    color: #ffffff;
+    width: 450px;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    top: -40px;
+    border: 2px solid black;
+  }
+  .heroImageContainer .aboutBottomSection .heading p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .heroImageContainer .aboutBottomSection .aboutHeadingDescription p {
+    font-size: 12px;
+    margin-top: -32px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -2603,6 +2869,96 @@
   }
   .newsAndEventsContainer .newsAndEventsLoadMoreBtn button {
     font-size: 12px;
+  }
+  .newsandeventsExStyle {
+    margin-top: -60px;
+  }
+  .menuExStyle {
+    margin-top: -32px;
+  }
+  .heroImageContainer {
+    margin-top: 120px;
+    background-image: url(../assets/images/schoolImage.webp);
+    background-size: cover; /* or background-size: contain; */
+    background-repeat: no-repeat;
+    height: 865px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+  }
+  .heroImageContainer .aboutTopSection {
+    width: 300px;
+    height: 400px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo {
+    background-color: #ffffff;
+    padding: 10px;
+    height: 100%;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo {
+    display: flex;
+    margin-top: 24px;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .topAboutInfo p {
+    font-size: 16px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 600;
+    width: 200px;
+    line-height: 20px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .middelAboutInfo {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: bold;
+    color: #023684;
+    line-height: 30px;
+    width: 300px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #006D77;
+    border-radius: 100px;
+    display: flex;
+    margin-top: 32px;
+  }
+  .heroImageContainer .aboutTopSection .aboutInfo .bottomAboutInfo p {
+    font-family: "Hind Madurai", sans-serif;
+    padding: 16px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .heroImageContainer .aboutBottomSection {
+    margin-top: 128px;
+    float: right; /* Uncomment this line */
+    padding: 10px;
+    background-color: #ffffff;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .heroImageContainer .aboutBottomSection .heading {
+    padding: 10px;
+    background-color: #006D77;
+    color: #ffffff;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    top: -40px;
+    border: 2px solid black;
+  }
+  .heroImageContainer .aboutBottomSection .heading p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .heroImageContainer .aboutBottomSection .aboutHeadingDescription p {
+    font-size: 12px;
+    margin-top: -32px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 320px) {
