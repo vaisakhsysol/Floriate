@@ -931,6 +931,58 @@ padding: 64px;
         }
     }
 }
+
+.aboutBriefContainer{
+    padding: 48px 64px;
+
+    .HeadingBrief{
+
+        .backgroundBubble{
+            padding: 20px;
+            background-color: $accentColor;
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+            position: relative;
+            margin-top: -88px;
+            z-index: -1;
+        }
+
+        p{
+            font-size: map-get($FontSize, veryBig );
+            font-weight: 600;
+            color: $textColor;
+            z-index: 3;
+
+        }
+    }
+
+    .aboutPara{
+    font-family: 'Hind Madurai', sans-serif;
+
+        p{
+            font-size: map-get($FontSize, regular );
+            margin-top: 32px;
+            line-height: 28px;
+        }
+    }
+    .aboutPointsContainer{
+        margin-top: 48px;
+        .points{
+            display: flex;
+            // margin-top: px;
+            p{
+                // margin-left: 24px;
+                font-weight: 600;
+            }
+        }
+
+        svg{
+            margin-right: 24px;
+        }
+    }
+    
+}
 //LG Display
 
 @mixin lgDisplay {
@@ -3652,6 +3704,56 @@ padding: 16px;
     }
 }
 
+
+.aboutBriefContainer{
+    padding: 24px ;
+
+    .HeadingBrief{
+
+        .backgroundBubble{
+            padding: 20px;
+            background-color: $accentColor;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            position: relative;
+            margin-top: -48px;
+            z-index: -1;
+        }
+
+        p{
+            font-size: map-get($FontSize, medium );
+            font-weight: 600;
+            color: $textColor;
+            z-index: 3;
+
+        }
+    }
+
+    .aboutPara{
+    font-family: 'Hind Madurai', sans-serif;
+
+        p{
+            font-size: map-get($FontSize, small );
+            margin-top: 32px;
+            line-height: 20px;
+        }
+    }
+    .aboutPointsContainer{
+        margin-top: 48px;
+        .points{
+            display: flex;
+            // margin-top: px;
+            p{
+                // margin-left: 24px;
+                font-weight: 600;
+                font-size: map-get($FontSize, small );
+            }
+            
+        }
+    }
+    
+}
 
 }
 

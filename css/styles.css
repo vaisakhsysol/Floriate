@@ -779,6 +779,46 @@
   padding: 10px;
 }
 
+.aboutBriefContainer {
+  padding: 48px 64px;
+}
+.aboutBriefContainer .HeadingBrief .backgroundBubble {
+  padding: 20px;
+  background-color: #F0F3BD;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  position: relative;
+  margin-top: -88px;
+  z-index: -1;
+}
+.aboutBriefContainer .HeadingBrief p {
+  font-size: 50px;
+  font-weight: 600;
+  color: #023684;
+  z-index: 3;
+}
+.aboutBriefContainer .aboutPara {
+  font-family: "Hind Madurai", sans-serif;
+}
+.aboutBriefContainer .aboutPara p {
+  font-size: 16px;
+  margin-top: 32px;
+  line-height: 28px;
+}
+.aboutBriefContainer .aboutPointsContainer {
+  margin-top: 48px;
+}
+.aboutBriefContainer .aboutPointsContainer .points {
+  display: flex;
+}
+.aboutBriefContainer .aboutPointsContainer .points p {
+  font-weight: 600;
+}
+.aboutBriefContainer .aboutPointsContainer svg {
+  margin-right: 24px;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -2959,6 +2999,43 @@
     font-size: 12px;
     margin-top: -32px;
     padding: 10px;
+  }
+  .aboutBriefContainer {
+    padding: 24px;
+  }
+  .aboutBriefContainer .HeadingBrief .backgroundBubble {
+    padding: 20px;
+    background-color: #F0F3BD;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: -48px;
+    z-index: -1;
+  }
+  .aboutBriefContainer .HeadingBrief p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #023684;
+    z-index: 3;
+  }
+  .aboutBriefContainer .aboutPara {
+    font-family: "Hind Madurai", sans-serif;
+  }
+  .aboutBriefContainer .aboutPara p {
+    font-size: 12px;
+    margin-top: 32px;
+    line-height: 20px;
+  }
+  .aboutBriefContainer .aboutPointsContainer {
+    margin-top: 48px;
+  }
+  .aboutBriefContainer .aboutPointsContainer .points {
+    display: flex;
+  }
+  .aboutBriefContainer .aboutPointsContainer .points p {
+    font-weight: 600;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 320px) {
