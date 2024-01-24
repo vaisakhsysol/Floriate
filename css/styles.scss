@@ -101,6 +101,7 @@
 
 
 .heroContainer{
+    margin-top: 128px;
     padding: 64px;
     display: flex;
     flex-direction: column;
@@ -571,7 +572,7 @@
 .newsandevents{
     z-index: 5;
     position: fixed;
-    margin-top: 97px;
+    margin-top: -32px;
     display: flex;
     width: 100%;
     background-color: $accentColor;
