@@ -729,9 +729,9 @@ padding: 64px;
     .footerIconandText{
         width: 350px;
 
-        img{
+        // img{
 
-        }
+        // }
 
         p{
             margin-top: 16px;
@@ -1063,9 +1063,30 @@ padding: 64px;
             }
            
         }
+    }   
+}
+
+.messageToChildrenContainer{
+    padding: 0 64px;
+    display: flex;
+    margin-top: 128px;
+    .line{
+        height: 150px;
+        padding: 5px;
+        background-color: $primaryColor;
+        border: 5px solid $secondaryColor;
+        
     }
 
-    
+    .message{
+        margin-left: 32px;
+        color: $textColor;
+        .heading{
+            font-size: map-get($FontSize, big );
+            font-weight: 600;
+
+        }
+    }
 }
 //LG Display
 
@@ -4099,6 +4120,32 @@ padding: 16px;
     
 }
 
+.messageToChildrenContainer{
+    padding: 0 16px;
+    display: flex;
+    margin-top: 128px;
+    .line{
+        height: 150px;
+        padding: 5px;
+        background-color: $primaryColor;
+        border: 5px solid $secondaryColor;
+        
+    }
+
+    .message{
+        margin-left: 32px;
+        color: $textColor;
+        .heading{
+            font-size: map-get($FontSize, medium );
+            font-weight: 600;
+
+        }
+
+        .desc{
+            font-size: map-get($FontSize, small );
+        }
+    }
+}
 
 }
 

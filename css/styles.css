@@ -887,6 +887,26 @@
   margin-top: -5px;
 }
 
+.messageToChildrenContainer {
+  padding: 0 64px;
+  display: flex;
+  margin-top: 128px;
+}
+.messageToChildrenContainer .line {
+  height: 150px;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 5px solid #006D77;
+}
+.messageToChildrenContainer .message {
+  margin-left: 32px;
+  color: #023684;
+}
+.messageToChildrenContainer .message .heading {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -3308,6 +3328,28 @@
   .missionVisionContainer .missionAndVision .mission .pointsContainer .points p {
     margin-left: 20px;
     margin-top: 8px;
+    font-size: 12px;
+  }
+  .messageToChildrenContainer {
+    padding: 0 16px;
+    display: flex;
+    margin-top: 128px;
+  }
+  .messageToChildrenContainer .line {
+    height: 150px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 5px solid #006D77;
+  }
+  .messageToChildrenContainer .message {
+    margin-left: 32px;
+    color: #023684;
+  }
+  .messageToChildrenContainer .message .heading {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .messageToChildrenContainer .message .desc {
     font-size: 12px;
   }
 }
