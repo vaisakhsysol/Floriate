@@ -819,6 +819,74 @@
   margin-right: 24px;
 }
 
+.missionVisionContainer {
+  padding: 0 64px;
+}
+.missionVisionContainer .missionVisionHeading p {
+  font-size: 50px;
+  font-weight: 600;
+  color: #023684;
+  z-index: 3;
+}
+.missionVisionContainer .backgroundBubble {
+  padding: 5px;
+  background-color: #F0F3BD;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  position: relative;
+  margin-top: -80px;
+  left: 650px;
+  z-index: -1;
+}
+.missionVisionContainer .missionAndVision {
+  display: flex;
+  justify-content: space-between;
+}
+.missionVisionContainer .missionAndVision .mission {
+  margin-top: 48px;
+  background-color: #006D77;
+  width: 49%;
+  padding: 12px;
+  color: #ffffff;
+}
+.missionVisionContainer .missionAndVision .mission .heading {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+.missionVisionContainer .missionAndVision .mission .heading p {
+  margin-bottom: 0;
+  margin-left: 32px;
+  font-size: 30px;
+}
+.missionVisionContainer .missionAndVision .mission .missionDesc {
+  margin-top: 12px;
+  padding: 12px 32px;
+}
+.missionVisionContainer .missionAndVision .mission .missionDesc p {
+  margin-bottom: 0;
+}
+.missionVisionContainer .missionAndVision .mission .line {
+  background-color: #ffffff;
+  padding: 2px;
+  margin: 0 32px;
+  width: 94px;
+  margin-top: 64px;
+}
+.missionVisionContainer .missionAndVision .mission .pointsContainer {
+  margin-top: 32px;
+}
+.missionVisionContainer .missionAndVision .mission .pointsContainer .points {
+  display: flex;
+  margin: 0 32px;
+}
+.missionVisionContainer .missionAndVision .mission .pointsContainer .points p {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -1875,6 +1943,74 @@
     font-size: 12px;
     font-weight: lighter;
   }
+  .missionVisionContainer {
+    padding: 0 64px;
+  }
+  .missionVisionContainer .missionVisionHeading p {
+    font-size: 50px;
+    font-weight: 600;
+    color: #023684;
+    z-index: 3;
+  }
+  .missionVisionContainer .backgroundBubble {
+    padding: 5px;
+    background-color: #F0F3BD;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: -80px;
+    left: 650px;
+    z-index: -1;
+  }
+  .missionVisionContainer .missionAndVision {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .missionVisionContainer .missionAndVision .mission {
+    margin-top: 48px;
+    background-color: #006D77;
+    width: 100%;
+    padding: 12px;
+    color: #ffffff;
+  }
+  .missionVisionContainer .missionAndVision .mission .heading {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .heading p {
+    margin-bottom: 0;
+    margin-left: 32px;
+    font-size: 30px;
+  }
+  .missionVisionContainer .missionAndVision .mission .missionDesc {
+    margin-top: 12px;
+    padding: 12px 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .missionDesc p {
+    margin-bottom: 0;
+  }
+  .missionVisionContainer .missionAndVision .mission .line {
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 0 32px;
+    width: 94px;
+    margin-top: 64px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer {
+    margin-top: 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer .points {
+    display: flex;
+    margin: 0 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer .points p {
+    margin-left: 20px;
+    margin-top: -5px;
+  }
 }
 @media screen and (max-width: 768px) {
   .navBar {
@@ -2460,6 +2596,74 @@
     margin-top: -32px;
     padding: 10px;
   }
+  .missionVisionContainer {
+    padding: 0 64px;
+  }
+  .missionVisionContainer .missionVisionHeading p {
+    font-size: 50px;
+    font-weight: 600;
+    color: #023684;
+    z-index: 3;
+  }
+  .missionVisionContainer .backgroundBubble {
+    padding: 5px;
+    background-color: #F0F3BD;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: -150px;
+    left: 400px;
+    z-index: -1;
+  }
+  .missionVisionContainer .missionAndVision {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .missionVisionContainer .missionAndVision .mission {
+    margin-top: 98px;
+    background-color: #006D77;
+    width: 100%;
+    padding: 12px;
+    color: #ffffff;
+  }
+  .missionVisionContainer .missionAndVision .mission .heading {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .heading p {
+    margin-bottom: 0;
+    margin-left: 32px;
+    font-size: 30px;
+  }
+  .missionVisionContainer .missionAndVision .mission .missionDesc {
+    margin-top: 12px;
+    padding: 12px 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .missionDesc p {
+    margin-bottom: 0;
+  }
+  .missionVisionContainer .missionAndVision .mission .line {
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 0 32px;
+    width: 94px;
+    margin-top: 64px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer {
+    margin-top: 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer .points {
+    display: flex;
+    margin: 0 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer .points p {
+    margin-left: 20px;
+    margin-top: -5px;
+  }
 }
 @media screen and (max-width: 500px) {
   .navBar {
@@ -3035,6 +3239,75 @@
   }
   .aboutBriefContainer .aboutPointsContainer .points p {
     font-weight: 600;
+    font-size: 12px;
+  }
+  .missionVisionContainer {
+    padding: 0 16px;
+  }
+  .missionVisionContainer .missionVisionHeading p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #023684;
+    z-index: 3;
+  }
+  .missionVisionContainer .backgroundBubble {
+    padding: 5px;
+    background-color: #F0F3BD;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: -50px;
+    left: 250px;
+    z-index: -1;
+  }
+  .missionVisionContainer .missionAndVision {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .missionVisionContainer .missionAndVision .mission {
+    margin-top: 48px;
+    background-color: #006D77;
+    width: 100%;
+    padding: 12px;
+    color: #ffffff;
+  }
+  .missionVisionContainer .missionAndVision .mission .heading {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .heading p {
+    margin-bottom: 0;
+    margin-left: 12px;
+    font-size: 20px;
+  }
+  .missionVisionContainer .missionAndVision .mission .missionDesc {
+    margin-top: 12px;
+    padding: 12px 12px;
+  }
+  .missionVisionContainer .missionAndVision .mission .missionDesc p {
+    margin-bottom: 0;
+  }
+  .missionVisionContainer .missionAndVision .mission .line {
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 0 32px;
+    width: 94px;
+    margin-top: 64px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer {
+    margin-top: 32px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer .points {
+    display: flex;
+    margin: 0 12px;
+  }
+  .missionVisionContainer .missionAndVision .mission .pointsContainer .points p {
+    margin-left: 20px;
+    margin-top: 8px;
     font-size: 12px;
   }
 }

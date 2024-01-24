@@ -983,6 +983,90 @@ padding: 64px;
     }
     
 }
+.missionVisionContainer{
+    padding:  0 64px;
+    .missionVisionHeading{
+        p{
+            font-size: map-get($FontSize, veryBig );
+            font-weight: 600;
+            color: $textColor;
+            z-index: 3;
+        }
+    }
+
+    .backgroundBubble{
+        padding: 5px;
+        background-color: $accentColor;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        position: relative;
+        margin-top: -80px;
+        left: 650px;
+        z-index: -1;
+
+    }
+
+
+    .missionAndVision{
+        display: flex;
+        justify-content: space-between;
+
+        .mission{
+            margin-top: 48px;
+            background-color: $secondaryColor;
+            width: 49%;
+            padding: 12px;
+            color: $primaryColor;
+    
+            .heading{
+                display: flex;
+                align-items: center;
+                margin-left: 32px;
+                margin-top: 32px;
+                p{
+                    margin-bottom: 0;
+                    margin-left: 32px;
+                    font-size: map-get($FontSize, big );
+    
+                }
+            }
+    
+            .missionDesc{
+                margin-top: 12px;
+                padding: 12px 32px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 2px;
+                margin: 0 32px;
+                width: 94px;
+                margin-top: 64px;
+            }
+    
+            .pointsContainer{
+                margin-top: 32px;
+    
+                .points{
+                    display: flex;
+                    margin: 0 32px;
+        
+                    p{
+                        margin-left: 20px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    
+}
 //LG Display
 
 @mixin lgDisplay {
@@ -2294,6 +2378,94 @@ padding: 64px;
     
 }
 
+
+
+.missionVisionContainer{
+    padding:  0 64px;
+    .missionVisionHeading{
+        p{
+            font-size: map-get($FontSize, veryBig );
+            font-weight: 600;
+            color: $textColor;
+            z-index: 3;
+        }
+    }
+
+    .backgroundBubble{
+        padding: 5px;
+        background-color: $accentColor;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        position: relative;
+        margin-top: -80px;
+        left: 650px;
+        z-index: -1;
+
+    }
+
+
+    .missionAndVision{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .mission{
+            margin-top: 48px;
+            background-color: $secondaryColor;
+            width: 100%;
+            padding: 12px;
+            color: $primaryColor;
+    
+            .heading{
+                display: flex;
+                align-items: center;
+                margin-left: 32px;
+                margin-top: 32px;
+                p{
+                    margin-bottom: 0;
+                    margin-left: 32px;
+                    font-size: map-get($FontSize, big );
+    
+                }
+            }
+    
+            .missionDesc{
+                margin-top: 12px;
+                padding: 12px 32px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 2px;
+                margin: 0 32px;
+                width: 94px;
+                margin-top: 64px;
+            }
+    
+            .pointsContainer{
+                margin-top: 32px;
+    
+                .points{
+                    display: flex;
+                    margin: 0 32px;
+        
+                    p{
+                        margin-left: 20px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    
+}
+
 }
 
 
@@ -3038,6 +3210,91 @@ padding: 16px;
     }
 }
 
+.missionVisionContainer{
+    padding:  0 64px;
+    .missionVisionHeading{
+        p{
+            font-size: map-get($FontSize, veryBig );
+            font-weight: 600;
+            color: $textColor;
+            z-index: 3;
+        }
+    }
+
+    .backgroundBubble{
+        padding: 5px;
+        background-color: $accentColor;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        position: relative;
+        margin-top: -150px;
+        left: 400px;
+        z-index: -1;
+
+    }
+
+
+    .missionAndVision{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .mission{
+            margin-top: 98px;
+            background-color: $secondaryColor;
+            width: 100%;
+            padding: 12px;
+            color: $primaryColor;
+    
+            .heading{
+                display: flex;
+                align-items: center;
+                margin-left: 32px;
+                margin-top: 32px;
+                p{
+                    margin-bottom: 0;
+                    margin-left: 32px;
+                    font-size: map-get($FontSize, big );
+    
+                }
+            }
+    
+            .missionDesc{
+                margin-top: 12px;
+                padding: 12px 32px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 2px;
+                margin: 0 32px;
+                width: 94px;
+                margin-top: 64px;
+            }
+    
+            .pointsContainer{
+                margin-top: 32px;
+    
+                .points{
+                    display: flex;
+                    margin: 0 32px;
+        
+                    p{
+                        margin-left: 20px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    
+}
 
 }
 
@@ -3754,6 +4011,94 @@ padding: 16px;
     }
     
 }
+
+.missionVisionContainer{
+    padding:  0 16px;
+    .missionVisionHeading{
+        p{
+            font-size: map-get($FontSize, medium );
+            font-weight: 600;
+            color: $textColor;
+            z-index: 3;
+        }
+    }
+
+    .backgroundBubble{
+        padding: 5px;
+        background-color: $accentColor;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: relative;
+        margin-top: -50px;
+        left: 250px;
+        z-index: -1;
+
+    }
+
+
+    .missionAndVision{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .mission{
+            margin-top: 48px;
+            background-color: $secondaryColor;
+            width: 100%;
+            padding: 12px;
+            color: $primaryColor;
+    
+            .heading{
+                display: flex;
+                align-items: center;
+                margin-left: 32px;
+                margin-top: 32px;
+                p{
+                    margin-bottom: 0;
+                    margin-left: 12px;
+                    font-size: map-get($FontSize, medium );
+    
+                }
+            }
+    
+            .missionDesc{
+                margin-top: 12px;
+                padding: 12px 12px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+    
+            .line{
+                background-color: $primaryColor;
+                padding: 2px;
+                margin: 0 32px;
+                width: 94px;
+                margin-top: 64px;
+            }
+    
+            .pointsContainer{
+                margin-top: 32px;
+    
+                .points{
+                    display: flex;
+                    margin: 0 12px;
+        
+                    p{
+                        margin-left: 20px;
+                        margin-top: 8px;
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+            }
+           
+        }
+    }
+
+    
+}
+
 
 }
 
