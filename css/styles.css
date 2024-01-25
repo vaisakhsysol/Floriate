@@ -607,6 +607,9 @@
   width: 150px;
 }
 
+.footerContainer {
+  width: 100%;
+}
 .footerContainer .footerContainerTop {
   padding: 64px;
   margin-top: 128px;
@@ -925,6 +928,121 @@
   background-color: #FCFFD1;
 }
 
+.newsAndEventsHeading {
+  margin-top: 136px;
+  padding: 64px;
+}
+.newsAndEventsHeading p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #023684;
+  width: 600px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 38px;
+}
+.newsAndEventsHeading .newsYellowBar {
+  padding: 12px;
+  background-color: #F0F3BD;
+  width: 320px;
+  margin-top: -38px;
+}
+.newsAndEventsHeading .newsAndEventsHeadingDesc {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #023684;
+  width: 800px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 22px;
+}
+
+.newsAndEventsMain {
+  padding: 32px 64px;
+}
+.newsAndEventsMain p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #023684;
+}
+.newsAndEventsMain .topNews {
+  border: 1px solid rgb(198, 198, 198);
+  padding: 32px;
+  border-radius: 2px;
+}
+.newsAndEventsMain .topNews .topnewsHeading p {
+  font-size: 30px;
+  font-weight: 500;
+  color: #023684;
+}
+.newsAndEventsMain .topNews .topnewsHeading .topNewsDate {
+  background-color: #F0F3BD;
+  width: 100px;
+  border-radius: 20px;
+}
+.newsAndEventsMain .topNews .topnewsHeading .topNewsDate p {
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+}
+.newsAndEventsMain .topNews .imageAndContent {
+  gap: 48px;
+  display: flex;
+  margin-top: 48px;
+}
+.newsAndEventsMain .topNews .imageAndContent .image img {
+  width: 300px;
+}
+.newsAndEventsMain .topNews .imageAndContent .content p {
+  line-height: 28px;
+}
+.newsAndEventsMain .topNews .imageAndContent .content p::first-letter {
+  initial-letter: 2;
+}
+
+.moreNewsandEventsMain {
+  padding: 32px 64px;
+}
+.moreNewsandEventsMain .morenewsandeventssubHeading p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #023684;
+}
+.moreNewsandEventsMain .moreNewsAndEventsTiles .card {
+  color: white;
+  width: 350px;
+  padding: 1rem;
+}
+.moreNewsandEventsMain .moreNewsAndEventsTiles .card .heading {
+  font-size: 16px;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #023684;
+  line-height: 20px;
+}
+.moreNewsandEventsMain .moreNewsAndEventsTiles .card .dateAndTime {
+  font-size: 12px;
+  color: #023684;
+  padding: 5px;
+  background: #F0F3BD;
+  width: 100px;
+  text-align: center;
+  border-radius: 25px;
+}
+.moreNewsandEventsMain .moreNewsAndEventsTiles .card .content {
+  color: #023684;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.moreNewsandEventsMain .moreNewsAndEventsTiles .card:hover {
+  cursor: pointer;
+  scale: 1.02;
+}
+.moreNewsandEventsMain .moreNewsAndEventsTiles .cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -1163,6 +1281,118 @@
   }
   .featuresContainer .featureOne .featureOneRight img {
     width: 600px;
+  }
+  .newsAndEventsHeading {
+    margin-top: 136px;
+    padding: 64px;
+  }
+  .newsAndEventsHeading p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #023684;
+    width: 600px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 38px;
+  }
+  .newsAndEventsHeading .newsYellowBar {
+    padding: 12px;
+    background-color: #F0F3BD;
+    width: 320px;
+    margin-top: -38px;
+  }
+  .newsAndEventsHeading .newsAndEventsHeadingDesc {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #023684;
+    width: 800px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 22px;
+  }
+  .newsAndEventsMain {
+    padding: 32px 64px;
+  }
+  .newsAndEventsMain p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .newsAndEventsMain .topNews {
+    border: 1px solid rgb(198, 198, 198);
+    padding: 32px;
+    border-radius: 2px;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading .topNewsDate {
+    background-color: #F0F3BD;
+    width: 100px;
+    border-radius: 20px;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading .topNewsDate p {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent {
+    gap: 48px;
+    display: flex;
+    margin-top: 48px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .image img {
+    width: 300px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .content p {
+    line-height: 28px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .content p::first-letter {
+    initial-letter: 2;
+  }
+  .moreNewsandEventsMain {
+    padding: 32px 64px;
+  }
+  .moreNewsandEventsMain .morenewsandeventssubHeading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card {
+    color: white;
+    width: 310px;
+    padding: 1rem;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .heading {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #023684;
+    line-height: 20px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .dateAndTime {
+    font-size: 12px;
+    color: #023684;
+    padding: 5px;
+    background: #F0F3BD;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .content {
+    color: #023684;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card:hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 @media screen and (max-width: 1366px) {
@@ -1896,6 +2126,9 @@
   .featuresContainer .featureOne .featureOneRight img {
     width: 620px;
   }
+  .footerContainer {
+    width: 100%;
+  }
   .footerContainer .footerContainerTop {
     padding: 64px;
     margin-top: 128px;
@@ -2048,6 +2281,119 @@
   .missionVisionContainer .missionAndVision .mission .pointsContainer .points p {
     margin-left: 20px;
     margin-top: -5px;
+  }
+  .newsAndEventsHeading {
+    margin-top: 136px;
+    padding: 64px;
+  }
+  .newsAndEventsHeading p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #023684;
+    width: 600px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 38px;
+  }
+  .newsAndEventsHeading .newsYellowBar {
+    padding: 12px;
+    background-color: #F0F3BD;
+    width: 320px;
+    margin-top: -38px;
+  }
+  .newsAndEventsHeading .newsAndEventsHeadingDesc {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #023684;
+    width: 800px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 22px;
+  }
+  .newsAndEventsMain {
+    padding: 32px 64px;
+  }
+  .newsAndEventsMain p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .newsAndEventsMain .topNews {
+    border: 1px solid rgb(198, 198, 198);
+    padding: 32px;
+    border-radius: 2px;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading .topNewsDate {
+    background-color: #F0F3BD;
+    width: 100px;
+    border-radius: 20px;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading .topNewsDate p {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent {
+    gap: 48px;
+    display: flex;
+    margin-top: 48px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .image img {
+    width: 300px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .content p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .content p::first-letter {
+    initial-letter: 2;
+  }
+  .moreNewsandEventsMain {
+    padding: 32px 64px;
+  }
+  .moreNewsandEventsMain .morenewsandeventssubHeading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card {
+    color: white;
+    width: 450px;
+    padding: 1rem;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .heading {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #023684;
+    line-height: 20px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .dateAndTime {
+    font-size: 12px;
+    color: #023684;
+    padding: 5px;
+    background: #F0F3BD;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .content {
+    color: #023684;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card:hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 @media screen and (max-width: 768px) {
@@ -3158,6 +3504,94 @@
   .menuExStyle {
     margin-top: -32px;
   }
+  .footerContainer {
+    width: 100%;
+  }
+  .footerContainer .footerContainerTop {
+    padding: 64px;
+    margin-top: 128px;
+    background-color: #006D77;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+  }
+  .footerContainer .footerContainerTop .footerIconandText {
+    width: 100%;
+  }
+  .footerContainer .footerContainerTop .footerIconandText p {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footerContainer .footerContainerTop .footerLinkSectionOne p {
+    font-family: 800;
+    font-size: 20px;
+  }
+  .footerContainer .footerContainerTop .footerLinkSectionOne ul {
+    padding: 0;
+  }
+  .footerContainer .footerContainerTop .footerLinkSectionOne li {
+    list-style: none;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 12px;
+  }
+  .footerContainer .footerContainerTop .footerLinkSectionOne li:hover {
+    list-style: disc;
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+  }
+  .footerContainer .footerContainerTop .addressAndSocial {
+    width: 100%;
+  }
+  .footerContainer .footerContainerTop .addressAndSocial .footerAddress {
+    font-size: 20px;
+  }
+  .footerContainer .footerContainerTop .addressAndSocial .footerAdderessLoc {
+    font-size: 12px;
+  }
+  .footerContainer .footerContainerTop .addressAndSocial .socialMediaContainer {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+  }
+  .footerContainer .footerContainerTop .addressAndSocial .socialMediaContainer li {
+    padding: 0;
+    margin-right: 8px;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .footerContainer .footerContainerTop .addressAndSocial .socialMediaContainer li:hover {
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+  }
+  .footerContainer .footerContainerBottom {
+    background-color: #006D77;
+    padding: 0 64px;
+  }
+  .footerContainer .footerContainerBottom .line {
+    background-color: #ffffff;
+    padding: 1px;
+    margin-top: -32px;
+  }
+  .footerContainer .credsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerContainer .credsContainer .credLeft {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: lighter;
+  }
   .heroImageContainer {
     margin-top: 120px;
     background-image: url(../assets/images/schoolImage.webp);
@@ -3369,6 +3803,122 @@
   }
   .messageToChildrenContainer .message .desc {
     font-size: 12px;
+  }
+  .newsAndEventsHeading {
+    margin-top: 136px;
+    padding: 64px;
+  }
+  .newsAndEventsHeading p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #023684;
+    width: 600px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 38px;
+  }
+  .newsAndEventsHeading .newsYellowBar {
+    padding: 12px;
+    background-color: #F0F3BD;
+    width: 320px;
+    margin-top: -38px;
+  }
+  .newsAndEventsHeading .newsAndEventsHeadingDesc {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #023684;
+    width: 800px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 22px;
+  }
+  .newsAndEventsMain {
+    padding: 32px 64px;
+    width: 100%;
+  }
+  .newsAndEventsMain p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .newsAndEventsMain .topNews {
+    border: 1px solid rgb(198, 198, 198);
+    padding: 32px;
+    border-radius: 2px;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading .topNewsDate {
+    background-color: #F0F3BD;
+    width: 100px;
+    border-radius: 20px;
+  }
+  .newsAndEventsMain .topNews .topnewsHeading .topNewsDate p {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent {
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 48px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .image img {
+    width: 100%;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .content p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .newsAndEventsMain .topNews .imageAndContent .content p::first-letter {
+    initial-letter: 2;
+  }
+  .moreNewsandEventsMain {
+    padding: 32px 64px;
+  }
+  .moreNewsandEventsMain .morenewsandeventssubHeading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023684;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card {
+    color: white;
+    width: 450px;
+    padding: 1rem;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .heading {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #023684;
+    line-height: 20px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .dateAndTime {
+    font-size: 12px;
+    color: #023684;
+    padding: 5px;
+    background: #F0F3BD;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card .content {
+    color: #023684;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .card:hover {
+    cursor: pointer;
+    scale: 1.02;
+  }
+  .moreNewsandEventsMain .moreNewsAndEventsTiles .cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 @media screen and (max-width: 320px) {
