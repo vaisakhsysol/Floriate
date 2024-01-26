@@ -3835,6 +3835,172 @@ padding: 16px;
     
 }
 
+
+.newsAndEventsHeading{
+    margin-top: 136px;
+    padding: 64px;
+
+    p{
+        font-size: map-get($FontSize, big );
+        font-weight: 700;
+        color: $textColor;
+        width: 600px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 38px;
+
+
+    }
+
+    .newsYellowBar{
+        padding: 12px;
+        background-color: $accentColor;
+        width: 320px;
+        margin-top: -38px;
+
+    }
+
+    .newsAndEventsHeadingDesc{
+        margin-top: 16px;
+        font-size: map-get($FontSize, small );
+        font-weight: 500;
+        color: $textColor;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 22px;
+    }
+}
+
+.newsAndEventsMain{
+    padding: 32px;
+    p{
+        font-size: map-get($FontSize, regular );
+        font-weight: 500;
+        color: $textColor;
+    }
+
+    .topNews{
+
+        border: 1px solid rgb(198, 198, 198);
+        padding: 32px;
+        border-radius:2px;
+
+
+        .topnewsHeading{
+            p{
+                font-size: map-get($FontSize, big );
+                font-weight: 500;
+                color: $textColor;
+
+            }
+
+            .topNewsDate{
+                background-color: $accentColor;
+                width: 100px;
+                border-radius: 20px;
+                p{
+                    font-size: map-get($FontSize, small );
+                    text-align: center;
+                    padding: 5px;
+                }
+            }
+
+            
+        }
+        .imageAndContent{
+            gap: 48px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 48px;
+
+            .image{
+                img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            .content{
+                p{
+                 
+                    line-height: 28px
+                };
+                p::first-letter{
+                 
+                    initial-letter: 2;
+                };
+               
+            }
+        }
+    }
+}
+
+.moreNewsandEventsMain{
+    padding: 32px;
+    .morenewsandeventssubHeading{
+        p{
+            font-size: map-get($FontSize, regular );
+            font-weight: 500;
+            color: $textColor;
+        }
+    }
+
+    .moreNewsAndEventsTiles{
+        .card {
+            // background-color: dodgerblue;
+
+            color: $primaryColor;
+            width: 310px;
+            padding: 1rem;
+            // height: 4rem;
+
+            .heading{
+                
+                font-size: map-get($FontSize, regular );
+                margin-top: 12px;
+                font-weight: 500;
+                color: $textColor;
+                line-height: 20px;
+
+            }
+
+            .dateAndTime{
+                font-size: map-get($FontSize, small );
+                color: $textColor;
+                padding: 5px;
+                background: $accentColor;
+                width: 100px;
+                text-align: center;
+                border-radius: 25px;
+
+            }
+
+            .content{
+                color: $textColor;
+                font-size: map-get($FontSize, small );
+                margin-top: 12px;
+
+            }
+
+            &:hover{
+                cursor: pointer;
+                scale: 1.02;
+            }
+          }
+          
+          .cards {
+            // max-width: 350px;
+            // margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+          }
+    }
+
+    
+     
+}
+
 }
 
 
