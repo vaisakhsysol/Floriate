@@ -1270,9 +1270,38 @@ padding: 64px;
           }
     }
 
-    
-     
 }
+.galleryTabs{
+    margin-top: 140px;
+    padding: 64px;
+    .cards {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .card {
+        background-color: $accentColor;
+        color: $textColorSecondary;
+        padding: 1rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+    
+    .content {
+        display: none;
+        margin-top: 20px;
+
+        
+    }
+    
+    /* Add styling for the selected tab */
+    .card.active {
+        background-color: $secondaryColor;
+        color: $textColor;
+    }
+}
+
 
 
 //LG Display
@@ -4954,15 +4983,16 @@ padding: 64px;
 
 .newsAndEventsHeading{
     margin-top: 136px;
-    padding: 64px;
+    padding: 16px;
 
     p{
-        font-size: map-get($FontSize, big );
+        font-size: map-get($FontSize, medium );
         font-weight: 700;
         color: $textColor;
-        width: 600px;
+        width: 100%;
         font-family: 'Montserrat', sans-serif;
         line-height: 38px;
+        line-height: 26px;
 
 
     }
@@ -4970,7 +5000,7 @@ padding: 64px;
     .newsYellowBar{
         padding: 12px;
         background-color: $accentColor;
-        width: 320px;
+        width: 200px;
         margin-top: -38px;
 
     }
@@ -4980,31 +5010,32 @@ padding: 64px;
         font-size: map-get($FontSize, small );
         font-weight: 500;
         color: $textColor;
-        width: 800px;
+        width: 100%;
         font-family: 'Montserrat', sans-serif;
         line-height: 22px;
     }
 }
 
 .newsAndEventsMain{
-    padding: 32px 64px;
+    padding: 16px;
     width: 100%;
     p{
         font-size: map-get($FontSize, regular );
         font-weight: 500;
         color: $textColor;
+        line-height: 26px;
     }
 
     .topNews{
 
         border: 1px solid rgb(198, 198, 198);
-        padding: 32px;
+        padding: 16px;
         border-radius:2px;
 
 
         .topnewsHeading{
             p{
-                font-size: map-get($FontSize, big );
+                font-size: map-get($FontSize, medium );
                 font-weight: 500;
                 color: $textColor;
 
@@ -5024,7 +5055,7 @@ padding: 64px;
             
         }
         .imageAndContent{
-            gap: 48px;
+            gap: 28px;
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -5053,7 +5084,7 @@ padding: 64px;
 }
 
 .moreNewsandEventsMain{
-    padding: 32px 64px;
+    padding: 16px;
     .morenewsandeventssubHeading{
         p{
             font-size: map-get($FontSize, regular );
@@ -5067,7 +5098,7 @@ padding: 64px;
             // background-color: dodgerblue;
 
             color: white;
-            width: 450px;
+            width: 350px;
             padding: 1rem;
             // height: 4rem;
 

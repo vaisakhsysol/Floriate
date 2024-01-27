@@ -78,3 +78,39 @@ hamburger.addEventListener("click",()=>{
     hamburger.classList.toggle('active')
 
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Call showContent for the first tab (in this case, 'ONE')
+    showContent('ONE');
+});
+
+function showContent(tabName) {
+    // Hide all content elements
+    var contentElements = document.querySelectorAll('.content');
+    contentElements.forEach(function (element) {
+        element.style.display = 'none';
+    });
+
+    // Show the selected content element
+    var selectedContent = document.getElementById('content-' + tabName);
+    if (selectedContent) {
+        selectedContent.style.display = 'block';
+    }
+
+
+    // // Add 'active' class and set background color to green for the selected card
+    var selectedCard = document.querySelector('.card[data-tab="' + tabName + '"]');
+    if (selectedCard) {
+        selectedCard.classList.add('active');
+        selectedCard.style.backgroundColor = 'green';
+    }
+
+    // Remove 'active' class and reset background color from all cards
+    var cardElements = document.querySelectorAll('.card');
+    cardElements.forEach(function (element) {
+        element.classList.remove('active');
+        // element.style.backgroundColor = $accentColor; // Reset background color
+    });
+
+    
+}

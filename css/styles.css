@@ -1043,6 +1043,32 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.galleryTabs {
+  margin-top: 140px;
+  padding: 64px;
+  /* Add styling for the selected tab */
+}
+.galleryTabs .cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.galleryTabs .card {
+  background-color: #F0F3BD;
+  color: #313131;
+  padding: 1rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.galleryTabs .content {
+  display: none;
+  margin-top: 20px;
+}
+.galleryTabs .card.active {
+  background-color: #006D77;
+  color: #023684;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -3922,20 +3948,21 @@
   }
   .newsAndEventsHeading {
     margin-top: 136px;
-    padding: 64px;
+    padding: 16px;
   }
   .newsAndEventsHeading p {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #023684;
-    width: 600px;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     line-height: 38px;
+    line-height: 26px;
   }
   .newsAndEventsHeading .newsYellowBar {
     padding: 12px;
     background-color: #F0F3BD;
-    width: 320px;
+    width: 200px;
     margin-top: -38px;
   }
   .newsAndEventsHeading .newsAndEventsHeadingDesc {
@@ -3943,26 +3970,27 @@
     font-size: 12px;
     font-weight: 500;
     color: #023684;
-    width: 800px;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     line-height: 22px;
   }
   .newsAndEventsMain {
-    padding: 32px 64px;
+    padding: 16px;
     width: 100%;
   }
   .newsAndEventsMain p {
     font-size: 16px;
     font-weight: 500;
     color: #023684;
+    line-height: 26px;
   }
   .newsAndEventsMain .topNews {
     border: 1px solid rgb(198, 198, 198);
-    padding: 32px;
+    padding: 16px;
     border-radius: 2px;
   }
   .newsAndEventsMain .topNews .topnewsHeading p {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     color: #023684;
   }
@@ -3977,7 +4005,7 @@
     padding: 5px;
   }
   .newsAndEventsMain .topNews .imageAndContent {
-    gap: 48px;
+    gap: 28px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -3994,7 +4022,7 @@
     initial-letter: 2;
   }
   .moreNewsandEventsMain {
-    padding: 32px 64px;
+    padding: 16px;
   }
   .moreNewsandEventsMain .morenewsandeventssubHeading p {
     font-size: 16px;
@@ -4003,7 +4031,7 @@
   }
   .moreNewsandEventsMain .moreNewsAndEventsTiles .card {
     color: white;
-    width: 450px;
+    width: 350px;
     padding: 1rem;
   }
   .moreNewsandEventsMain .moreNewsAndEventsTiles .card .heading {
