@@ -1272,7 +1272,7 @@ padding: 64px;
 
 }
 .galleryTabs{
-    margin-top: 140px;
+    margin-top: 138px;
     padding: 64px;
     .cards {
         display: grid;
@@ -1302,7 +1302,144 @@ padding: 64px;
     }
 }
 
+.publicDisclosureHeading{
+    margin-top: 138px;
+    padding: 64px;
 
+    .pbHeadinganddesc{
+        h2{
+            color: $textColor;
+            text-transform: uppercase;
+            font-weight: 700;
+            z-index: 3;
+        }
+        p{
+            width: 800px;
+        }
+    }
+
+    .pbYellowLine{
+        padding: 10px;
+        background-color: $accentColor;
+        width: 350px;
+        position: relative;
+        top: -145px;
+        z-index: -2;
+
+    }
+}
+
+.publicDisclosureTabs{
+    margin-bottom: 256px;
+    .card {
+        background-color: $accentColor;
+
+        color: $textColorSecondary;
+        padding: 1em;
+        height: 4rem;
+        font-size: map-get($FontSize, regular );
+      }
+      
+     
+
+      .cards {
+        padding: 0 64px;
+        // max-width: 1200px;
+        // margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+
+      .pbContentTab{
+        margin-top: 64px;
+        padding: 0 64px;
+        color: $textColor;
+        
+        section{
+            margin-bottom: 140px;
+        }
+
+
+        .generalInformationHeading{
+            p{
+                width: 800px;
+            }
+        }
+
+        .generalTable{
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 32px;
+
+              }
+              
+              td, th {
+        border: 1px solid #ffffff;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: $accentColor;
+      }
+      tr:nth-child(odd) {
+        background-color: #FCFFD1;
+      }
+        }
+      }
+
+      .resultTenth{
+        margin-top: 64px;
+
+        p{
+            margin-bottom: -16px;
+            font-weight: 600;
+            font-size: map-get($FontSize, regular );
+
+        }
+
+        
+      }
+      .curriculumContainer{
+        padding: 64px;
+        background-color: $accentColor;
+
+        .card {
+            background-color: $secondaryColor;
+            color: white;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            border-radius: 100px;
+
+            .svgContainer{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+
+               p{
+                color: $primaryColor;
+                margin: 0px;
+            }
+            // padding: 1rem;
+            // height: 4rem;
+          }
+          
+          .cards {
+            // max-width: 1200px;
+            // margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          }
+        }
+    }
+      
+}
 
 //LG Display
 
