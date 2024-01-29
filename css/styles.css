@@ -1094,6 +1094,10 @@
 .publicDisclosureTabs {
   margin-bottom: 256px;
 }
+.publicDisclosureTabs .card.selected {
+  background-color: #006D77;
+  color: #ffffff;
+}
 .publicDisclosureTabs .card {
   background-color: #F0F3BD;
   color: #313131;

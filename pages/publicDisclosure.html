@@ -125,14 +125,15 @@
         <section>
 
             <div class="publicDisclosureTabs">
-                <div class="cards">
-                    <div class="card" id="generalBtn" >General</div>
-                    <div class="card" id="docsBtn" >Documents & Information</div>
-                    <div class="card" id="resultBtn" >Results & Academics</div>
-                    <div class="card" id="staffBtn" >Staff</div>
-                    <div class="card" id="infraBtn" >Infrastructure</div>
-                    <div class="card" id="detailsBtn" >Details of Curriculum</div>
+                <div class="cards" id="tabContainer">
+                    <div class="card" id="generalBtn" onclick="selectTab('generalBtn')">General</div>
+                    <div class="card" id="docsBtn" onclick="selectTab('docsBtn')">Documents & Information</div>
+                    <div class="card" id="resultBtn" onclick="selectTab('resultBtn')">Results & Academics</div>
+                    <div class="card" id="staffBtn" onclick="selectTab('staffBtn')">Staff</div>
+                    <div class="card" id="infraBtn" onclick="selectTab('infraBtn')">Infrastructure</div>
+                    <div class="card" id="detailsBtn" onclick="selectTab('detailsBtn')">Details of Curriculum</div>
                 </div>
+                
 
                 <div class="pbContentTab">
                     <section id="general"> <!-- Add id for each section corresponding to the tabs -->

@@ -116,6 +116,18 @@ function showContent(tabName) {
 } 
 
 
+function selectTab(tabId) {
+    var tabs = document.querySelectorAll('.card');
+    
+    tabs.forEach(function(tab) {
+        tab.classList.remove('selected'); // Remove 'selected' class from all tabs
+    });
+
+    var selectedTab = document.getElementById(tabId);
+    selectedTab.classList.add('selected'); // Add 'selected' class to the clicked tab
+}
+
+
 let generalBtn = document.querySelector("#generalBtn")
 let docsBtn = document.querySelector("#docsBtn")
 let resultBtn = document.querySelector("#resultBtn")

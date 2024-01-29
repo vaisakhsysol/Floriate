@@ -1330,6 +1330,11 @@ padding: 64px;
 }
 .publicDisclosureTabs {
     
+    .card.selected {
+        background-color:$secondaryColor;
+        color: $primaryColor;
+    }
+
     margin-bottom: 256px;
 
     .card {
