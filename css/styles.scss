@@ -1431,6 +1431,10 @@ padding: 64px;
             }
         }
     }
+
+    .mobileTabsContainer{
+        display: none;
+    }
 }
 
 
@@ -4188,13 +4192,15 @@ padding: 16px;
     }
 }
 .publicDisclosureTabs {
-    padding: 0 16px;
+    padding: 0;
     position: sticky;
     top: 0;
+
     // z-index: 1000;
     .card.selected {
         background-color:$secondaryColor;
         color: $primaryColor;
+
     }
 
     margin-bottom: 256px;
@@ -4206,6 +4212,7 @@ padding: 16px;
         height: 4rem;
         font-size: map-get($FontSize, small);
         cursor: pointer;
+        display: none;
     }
 
     .cards {
@@ -4294,6 +4301,8 @@ padding: 16px;
             }
         }
     }
+
+  
 }
 
 }
@@ -5545,6 +5554,37 @@ padding: 64px;
                 }
             }
         }
+    }
+    .mobileTabsContainer{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        padding: 15px;
+        background-color: $accentColor;
+        bottom: 0;
+        font-size: x-small;
+        text-align: center;
+        border: 1px solid rgba(0, 72, 0, 0.292);
+
+        .generalMobBtn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+            background-color: $accentColor;
+            padding: 5px;
+            border-radius: 50px;
+            
+
+
+            p{
+                margin-bottom: 0;
+                display: none;
+            }
+        }
+
     }
 }
 

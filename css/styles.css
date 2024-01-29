@@ -1174,6 +1174,9 @@
   color: #ffffff;
   margin: 0px;
 }
+.publicDisclosureTabs .mobileTabsContainer {
+  display: none;
+}
 
 @media screen and (max-width: 1440px) {
   .heroContainer {
@@ -3318,7 +3321,7 @@
     z-index: -2;
   }
   .publicDisclosureTabs {
-    padding: 0 16px;
+    padding: 0;
     position: sticky;
     top: 0;
     margin-bottom: 256px;
@@ -3334,6 +3337,7 @@
     height: 4rem;
     font-size: 12px;
     cursor: pointer;
+    display: none;
   }
   .publicDisclosureTabs .cards {
     padding: 0 16px !important;
@@ -4381,6 +4385,32 @@
   .publicDisclosureTabs .curriculumContainer .card .svgContainer p {
     color: #ffffff;
     margin: 0px;
+  }
+  .publicDisclosureTabs .mobileTabsContainer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    background-color: #F0F3BD;
+    bottom: 0;
+    font-size: x-small;
+    text-align: center;
+    border: 1px solid rgba(0, 72, 0, 0.292);
+  }
+  .publicDisclosureTabs .mobileTabsContainer .generalMobBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background-color: #F0F3BD;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  .publicDisclosureTabs .mobileTabsContainer .generalMobBtn p {
+    margin-bottom: 0;
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {

@@ -155,3 +155,52 @@ infraBtn.addEventListener('click',()=>{
 detailsBtn.addEventListener('click',()=>{
     window.scrollTo(0, 3750);
 })
+
+let mobGeneralBtn = document.querySelector("#mobGeneralBtn")
+let mobDocsBtn = document.querySelector("#mobDocsBtn")
+let mobResBtn = document.querySelector("#mobResBtn")
+let mobStaffBtn = document.querySelector("#mobStaffBtn")
+let mobInfraBtn = document.querySelector("#mobInfraBtn")
+let mobCurrBtn = document.querySelector("#mobCurrBtn")
+
+mobGeneralBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 300);
+})
+
+mobDocsBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 900);
+})
+
+mobResBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 1500);
+})
+
+mobStaffBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 2800);
+})
+
+mobInfraBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 3300);
+})
+
+mobCurrBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 3750);
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all elements with the class 'generalMobBtn'
+    var buttons = document.querySelectorAll('.generalMobBtn');
+
+    // Add a click event listener to each button
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            // Reset background color for all buttons
+            buttons.forEach(function (btn) {
+                btn.style.backgroundColor = "#F0F3BD"; // You can set this to the default background color
+            });
+
+            // Change the background color of the clicked button
+            button.style.backgroundColor = "#006D77"; // Replace 'newColor' with the desired color
+        });
+    });
+});
