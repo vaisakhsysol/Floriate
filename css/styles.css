@@ -1092,6 +1092,9 @@
 }
 
 .publicDisclosureTabs {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   margin-bottom: 256px;
 }
 .publicDisclosureTabs .card.selected {

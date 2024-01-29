@@ -1330,6 +1330,9 @@ padding: 64px;
 }
 .publicDisclosureTabs {
     
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     .card.selected {
         background-color:$secondaryColor;
         color: $primaryColor;
