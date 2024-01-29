@@ -1094,7 +1094,6 @@
 .publicDisclosureTabs {
   position: sticky;
   top: 0;
-  z-index: 1000;
   margin-bottom: 256px;
 }
 .publicDisclosureTabs .card.selected {
@@ -1107,6 +1106,7 @@
   padding: 1em;
   height: 4rem;
   font-size: 16px;
+  cursor: pointer;
 }
 .publicDisclosureTabs .cards {
   padding: 0 64px;
@@ -1162,6 +1162,7 @@
   width: 90px;
   text-align: center;
   border-radius: 100px;
+  cursor: pointer;
 }
 .publicDisclosureTabs .curriculumContainer .card .svgContainer {
   display: flex;
@@ -3295,6 +3296,113 @@
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   }
+  .publicDisclosureHeading {
+    margin-top: 138px;
+    padding: 64px;
+  }
+  .publicDisclosureHeading .pbHeadinganddesc h2 {
+    color: #023684;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 3;
+  }
+  .publicDisclosureHeading .pbHeadinganddesc p {
+    width: 700px;
+  }
+  .publicDisclosureHeading .pbYellowLine {
+    padding: 10px;
+    background-color: #F0F3BD;
+    width: 350px;
+    position: relative;
+    top: -145px;
+    z-index: -2;
+  }
+  .publicDisclosureTabs {
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 256px;
+  }
+  .publicDisclosureTabs .card.selected {
+    background-color: #006D77;
+    color: #ffffff;
+  }
+  .publicDisclosureTabs .card {
+    background-color: #F0F3BD;
+    color: #313131;
+    padding: 1em;
+    height: 4rem;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .publicDisclosureTabs .cards {
+    padding: 0 16px !important;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+  }
+  .publicDisclosureTabs .pbContentTab {
+    margin-top: 64px;
+    padding: 0 16px !important;
+    color: #023684;
+  }
+  .publicDisclosureTabs .pbContentTab section {
+    margin-bottom: 140px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalInformationHeading p {
+    width: 700px;
+    font-size: 12px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 32px;
+    font-size: 12px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable td,
+  .publicDisclosureTabs .pbContentTab .generalTable th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable tr:nth-child(even) {
+    background-color: #F0F3BD;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable tr:nth-child(odd) {
+    background-color: #FCFFD1;
+  }
+  .publicDisclosureTabs .resultTenth {
+    margin-top: 64px;
+  }
+  .publicDisclosureTabs .resultTenth p {
+    margin-bottom: -16px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .publicDisclosureTabs .curriculumContainer {
+    padding: 64px;
+    background-color: #F0F3BD;
+  }
+  .publicDisclosureTabs .curriculumContainer .card {
+    background-color: #006D77;
+    color: white;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .publicDisclosureTabs .curriculumContainer .card .svgContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .publicDisclosureTabs .curriculumContainer .card .svgContainer p {
+    color: #ffffff;
+    margin: 0px;
+  }
 }
 @media screen and (max-width: 500px) {
   .navBar {
@@ -4168,6 +4276,111 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .publicDisclosureHeading {
+    margin-top: 120px;
+    padding: 32px;
+  }
+  .publicDisclosureHeading .pbHeadinganddesc h2 {
+    color: #023684;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 3;
+  }
+  .publicDisclosureHeading .pbHeadinganddesc p {
+    width: 300px;
+    font-size: 12px;
+  }
+  .publicDisclosureHeading .pbYellowLine {
+    padding: 10px;
+    background-color: #F0F3BD;
+    width: 300px;
+    position: relative;
+    top: -165px;
+    z-index: -2;
+  }
+  .publicDisclosureTabs {
+    position: sticky;
+    top: 0;
+    margin-bottom: 256px;
+  }
+  .publicDisclosureTabs .card.selected {
+    background-color: #006D77;
+    color: #ffffff;
+  }
+  .publicDisclosureTabs .card {
+    background-color: #F0F3BD;
+    color: #313131;
+    padding: 1em;
+    height: 4rem;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .publicDisclosureTabs .cards {
+    padding: 0 64px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .publicDisclosureTabs .pbContentTab {
+    margin-top: 64px;
+    padding: 0 64px;
+    color: #023684;
+  }
+  .publicDisclosureTabs .pbContentTab section {
+    margin-bottom: 140px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalInformationHeading p {
+    width: 300px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable td,
+  .publicDisclosureTabs .pbContentTab .generalTable th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable tr:nth-child(even) {
+    background-color: #F0F3BD;
+  }
+  .publicDisclosureTabs .pbContentTab .generalTable tr:nth-child(odd) {
+    background-color: #FCFFD1;
+  }
+  .publicDisclosureTabs .resultTenth {
+    margin-top: 64px;
+  }
+  .publicDisclosureTabs .resultTenth p {
+    margin-bottom: -16px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .publicDisclosureTabs .curriculumContainer {
+    padding: 64px;
+    background-color: #F0F3BD;
+  }
+  .publicDisclosureTabs .curriculumContainer .card {
+    background-color: #006D77;
+    color: white;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .publicDisclosureTabs .curriculumContainer .card .svgContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .publicDisclosureTabs .curriculumContainer .card .svgContainer p {
+    color: #ffffff;
+    margin: 0px;
   }
 }
 @media screen and (max-width: 320px) {

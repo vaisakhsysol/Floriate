@@ -1300,7 +1300,7 @@ padding: 64px;
         background-color: $secondaryColor;
         color: $textColor;
     }
-}
+} 
 
 .publicDisclosureHeading{
     margin-top: 138px;
@@ -1332,7 +1332,7 @@ padding: 64px;
     
     position: sticky;
     top: 0;
-    z-index: 1000;
+    // z-index: 1000;
     .card.selected {
         background-color:$secondaryColor;
         color: $primaryColor;
@@ -1346,6 +1346,7 @@ padding: 64px;
         padding: 1em;
         height: 4rem;
         font-size: map-get($FontSize, regular);
+        cursor: pointer;
     }
 
     .cards {
@@ -1415,6 +1416,7 @@ padding: 64px;
             width: 90px;
             text-align: center;
             border-radius: 100px;
+            cursor: pointer;
 
             .svgContainer {
                 display: flex;
@@ -4158,6 +4160,142 @@ padding: 16px;
      
 }
 
+
+.publicDisclosureHeading{
+    margin-top: 138px;
+    padding: 64px;
+
+    .pbHeadinganddesc{
+        h2{
+            color: $textColor;
+            text-transform: uppercase;
+            font-weight: 700;
+            z-index: 3;
+        }
+        p{
+            width: 700px;
+        }
+    }
+
+    .pbYellowLine{
+        padding: 10px;
+        background-color: $accentColor;
+        width: 350px;
+        position: relative;
+        top: -145px;
+        z-index: -2;
+
+    }
+}
+.publicDisclosureTabs {
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    // z-index: 1000;
+    .card.selected {
+        background-color:$secondaryColor;
+        color: $primaryColor;
+    }
+
+    margin-bottom: 256px;
+
+    .card {
+        background-color: $accentColor;
+        color: $textColorSecondary;
+        padding: 1em;
+        height: 4rem;
+        font-size: map-get($FontSize, small);
+        cursor: pointer;
+    }
+
+    .cards {
+        padding: 0 16px !important;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    }
+
+    .pbContentTab {
+        margin-top: 64px;
+        padding: 0 16px !important;
+        color: $textColor;
+
+        section {
+            margin-bottom: 140px;
+        }
+
+        .generalInformationHeading {
+            p {
+                width: 700px;
+                font-size: map-get($FontSize, small);
+
+            }
+        }
+
+        .generalTable {
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 32px;
+                font-size: map-get($FontSize, small);
+
+            }
+
+            td,
+            th {
+                border: 1px solid #ffffff;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: $accentColor;
+            }
+            tr:nth-child(odd) {
+                background-color: #FCFFD1;
+            }
+        }
+    }
+
+    .resultTenth {
+        margin-top: 64px;
+
+        p {
+            margin-bottom: -16px;
+            font-weight: 600;
+            font-size: map-get($FontSize, regular);
+        }
+    }
+
+    .curriculumContainer {
+        padding: 64px;
+        background-color: $accentColor;
+
+        .card {
+            background-color: $secondaryColor;
+            color: white;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            border-radius: 100px;
+            cursor: pointer;
+
+            .svgContainer {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: $primaryColor;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
 }
 
 
@@ -5275,6 +5413,139 @@ padding: 64px;
 
     
      
+}
+
+
+.publicDisclosureHeading{
+    margin-top: 120px;
+    padding: 32px;
+
+    .pbHeadinganddesc{
+        h2{
+            color: $textColor;
+            text-transform: uppercase;
+            font-weight: 700;
+            z-index: 3;
+        }
+        p{
+            width: 300px;
+            font-size: map-get($FontSize, small);
+        }
+    }
+
+    .pbYellowLine{
+        padding: 10px;
+        background-color: $accentColor;
+        width: 300px;
+        position: relative;
+        top: -165px;
+        z-index: -2;
+
+    }
+}
+.publicDisclosureTabs {
+    
+    position: sticky;
+    top: 0;
+    // z-index: 1000;
+    .card.selected {
+        background-color:$secondaryColor;
+        color: $primaryColor;
+    }
+
+    margin-bottom: 256px;
+
+    .card {
+        background-color: $accentColor;
+        color: $textColorSecondary;
+        padding: 1em;
+        height: 4rem;
+        font-size: map-get($FontSize, small);
+        cursor: pointer;
+    }
+
+    .cards {
+        padding: 0 64px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .pbContentTab {
+        margin-top: 64px;
+        padding: 0 64px;
+        color: $textColor;
+
+        section {
+            margin-bottom: 140px;
+        }
+
+        .generalInformationHeading {
+            p {
+                width: 300px;
+            }
+        }
+
+        .generalTable {
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 32px;
+            }
+
+            td,
+            th {
+                border: 1px solid #ffffff;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: $accentColor;
+            }
+            tr:nth-child(odd) {
+                background-color: #FCFFD1;
+            }
+        }
+    }
+
+    .resultTenth {
+        margin-top: 64px;
+
+        p {
+            margin-bottom: -16px;
+            font-weight: 600;
+            font-size: map-get($FontSize, regular);
+        }
+    }
+
+    .curriculumContainer {
+        padding: 64px;
+        background-color: $accentColor;
+
+        .card {
+            background-color: $secondaryColor;
+            color: white;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            border-radius: 100px;
+            cursor: pointer;
+
+            .svgContainer {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: $primaryColor;
+                    margin: 0px;
+                }
+            }
+        }
+    }
 }
 
 }
