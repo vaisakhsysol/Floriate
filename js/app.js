@@ -114,3 +114,32 @@ function showContent(tabName) {
 
     
 } 
+
+
+let generalBtn = document.querySelector("#generalBtn")
+let docsBtn = document.querySelector("#docsBtn")
+let resultBtn = document.querySelector("#resultBtn")
+let staffBtn = document.querySelector("#staffBtn")
+let infraBtn = document.querySelector("#infraBtn")
+let detailsBtn = document.querySelector("#detailsBtn")
+
+// let general = document.querySelector("#general")
+
+generalBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 300);
+})
+docsBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 900);
+})
+resultBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 1500);
+})
+staffBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 2800);
+})
+infraBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 3300);
+})
+detailsBtn.addEventListener('click',()=>{
+    window.scrollTo(0, 3750);
+})

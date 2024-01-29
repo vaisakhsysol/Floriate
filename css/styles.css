@@ -1124,7 +1124,8 @@
   width: 100%;
   margin-top: 32px;
 }
-.publicDisclosureTabs .pbContentTab .generalTable td, .publicDisclosureTabs .pbContentTab .generalTable th {
+.publicDisclosureTabs .pbContentTab .generalTable td,
+.publicDisclosureTabs .pbContentTab .generalTable th {
   border: 1px solid #ffffff;
   text-align: left;
   padding: 8px;
@@ -1164,11 +1165,6 @@
 .publicDisclosureTabs .curriculumContainer .card .svgContainer p {
   color: #ffffff;
   margin: 0px;
-}
-.publicDisclosureTabs .curriculumContainer .card .cards {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media screen and (max-width: 1440px) {
