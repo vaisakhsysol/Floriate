@@ -172,7 +172,7 @@ mobDocsBtn.addEventListener('click',()=>{
 })
 
 mobResBtn.addEventListener('click',()=>{
-    window.scrollTo(0, 1500);
+    window.scrollTo(0, 1300);
 })
 
 mobStaffBtn.addEventListener('click',()=>{
@@ -180,27 +180,26 @@ mobStaffBtn.addEventListener('click',()=>{
 })
 
 mobInfraBtn.addEventListener('click',()=>{
-    window.scrollTo(0, 3300);
+    window.scrollTo(0, 3400);
 })
 
 mobCurrBtn.addEventListener('click',()=>{
-    window.scrollTo(0, 3750);
+    window.scrollTo(0, 3950);
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get all elements with the class 'generalMobBtn'
+    
     var buttons = document.querySelectorAll('.generalMobBtn');
 
-    // Add a click event listener to each button
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
-            // Reset background color for all buttons
+          
             buttons.forEach(function (btn) {
-                btn.style.backgroundColor = "#F0F3BD"; // You can set this to the default background color
+                btn.style.backgroundColor = "#F0F3BD"; 
             });
 
-            // Change the background color of the clicked button
-            button.style.backgroundColor = "#006D77"; // Replace 'newColor' with the desired color
+          
+            button.style.backgroundColor = "#006D77"; 
         });
     });
 });

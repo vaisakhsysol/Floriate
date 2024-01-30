@@ -1178,6 +1178,135 @@
   display: none;
 }
 
+.contactUsContainer {
+  padding: 64px;
+  background-color: #F0F3BD;
+  margin-top: 130px;
+  height: 600px;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+.contactUsContainer .contactUsLeft {
+  width: 50%;
+}
+.contactUsContainer .contactUsLeft h2 {
+  font-weight: 800;
+  font-size: 50px;
+  color: #006D77;
+  z-index: 10;
+}
+.contactUsContainer .contactUsLeft p {
+  font-size: 16px;
+  color: #006D77;
+}
+.contactUsContainer .contactUsLeft .whiteBar {
+  padding: 20px;
+  width: 600px;
+  background-color: #ffffff;
+  position: relative;
+  top: -170px;
+  z-index: 0;
+  opacity: 0.4;
+}
+.contactUsContainer .contactUsLeft .contactSocials {
+  margin-top: 64px;
+}
+.contactUsContainer .contactUsLeft .contactSocials ul {
+  display: flex;
+  padding: 0;
+}
+.contactUsContainer .contactUsLeft .contactSocials li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  margin-left: 18px;
+  height: 75px;
+  list-style: none;
+  background-color: #006D77;
+  padding: 15px;
+  border-radius: 50px;
+}
+.contactUsContainer .contactUsLeft .leafOne {
+  position: relative;
+  top: -50%;
+  left: -80px;
+}
+.contactUsContainer .contactUsRight {
+  width: 50%;
+  text-align: left;
+}
+.contactUsContainer .contactUsRight h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #006D77;
+}
+.contactUsContainer .contactUsRight p {
+  font-size: 16px;
+}
+.contactUsContainer .contactUsRight .inputFields .names {
+  display: flex;
+  gap: 10px;
+}
+.contactUsContainer .contactUsRight .inputFields .names .name {
+  width: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 0.5px solid #313131;
+}
+.contactUsContainer .contactUsRight .inputFields .names .name .nameInput {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-left: 18px;
+}
+.contactUsContainer .contactUsRight .inputFields .names .name .nameInput input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+.contactUsContainer .contactUsRight .inputFields .email {
+  display: flex;
+  margin-top: 16px;
+  width: 100%;
+  padding: 5px;
+  border: 0.5px solid #313131;
+  background-color: #ffffff;
+}
+.contactUsContainer .contactUsRight .inputFields .email .emailInput {
+  margin-left: 18px;
+}
+.contactUsContainer .contactUsRight .inputFields .email .emailInput input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+.contactUsContainer .contactUsRight .inputFields .textArea {
+  width: 100%;
+  padding: 5px;
+  border: 0.5px solid #313131;
+  background-color: #ffffff;
+  margin-top: 16px;
+  color: #313131;
+}
+.contactUsContainer .contactUsRight .inputFields .textArea input {
+  border: none;
+  width: 100%;
+  padding: 18px;
+}
+.contactUsContainer .contactUsRight .inputFields .sendButton {
+  width: 100%;
+  background-color: #006D77;
+  padding: 15px;
+  margin-top: 16px;
+  border: none;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
@@ -3385,7 +3514,7 @@
     font-size: 16px;
   }
   .publicDisclosureTabs .curriculumContainer {
-    padding: 64px;
+    padding: 32px;
     background-color: #F0F3BD;
   }
   .publicDisclosureTabs .curriculumContainer .card {
@@ -3396,9 +3525,10 @@
     text-align: center;
     border-radius: 100px;
     cursor: pointer;
+    display: block;
   }
   .publicDisclosureTabs .curriculumContainer .card .svgContainer {
-    display: flex;
+    display: block;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
@@ -4364,27 +4494,8 @@
     font-size: 16px;
   }
   .publicDisclosureTabs .curriculumContainer {
-    padding: 64px;
+    padding: 32px;
     background-color: #F0F3BD;
-  }
-  .publicDisclosureTabs .curriculumContainer .card {
-    background-color: #006D77;
-    color: white;
-    height: 90px;
-    width: 90px;
-    text-align: center;
-    border-radius: 100px;
-    cursor: pointer;
-  }
-  .publicDisclosureTabs .curriculumContainer .card .svgContainer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .publicDisclosureTabs .curriculumContainer .card .svgContainer p {
-    color: #ffffff;
-    margin: 0px;
   }
   .publicDisclosureTabs .mobileTabsContainer {
     display: flex;
@@ -4397,6 +4508,7 @@
     font-size: x-small;
     text-align: center;
     border: 1px solid rgba(0, 72, 0, 0.292);
+    z-index: 100;
   }
   .publicDisclosureTabs .mobileTabsContainer .generalMobBtn {
     display: flex;
