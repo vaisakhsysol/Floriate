@@ -491,6 +491,11 @@
   scale: 1.02;
 }
 
+.testimonialsContaioner {
+  margin-top: 128px;
+  padding: 0 64px;
+}
+
 .newsandevents {
   z-index: 5;
   position: fixed;
