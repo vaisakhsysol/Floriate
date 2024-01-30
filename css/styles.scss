@@ -1498,6 +1498,7 @@ padding: 64px;
             position: relative;
             top: -50%;
             left: -80px;
+            overflow: hidden;
         }
     }
     .contactUsRight{
@@ -1594,6 +1595,14 @@ padding: 64px;
                 border: none;
                 color: $primaryColor;
             }
+        }
+
+        .leadTwo{
+            position: relative;
+            top: -600px;
+            overflow: hidden;
+            left: 400px;
+            // overflow: hidden;
         }
     }
 }
@@ -4465,6 +4474,179 @@ padding: 16px;
     }
 
   
+}
+
+
+.contactUsContainer{
+    padding: 16px;
+    background-color: $accentColor;
+    margin-top: 130px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+
+    .contactUsLeft{
+        width: 100%;
+
+        h2{
+            font-weight: 800;
+            font-size: map-get($FontSize, big );
+            color: $secondaryColor;
+            z-index: 10;
+        }
+
+        p{
+            font-size: map-get($FontSize, regular);
+            color: $secondaryColor;
+
+        }
+
+        .whiteBar{
+            padding: 20px;
+            width: 100%;
+            background-color: $primaryColor;
+            position: relative;
+            top: -150px;
+            z-index: 0;
+            opacity: 0.4;
+        }
+        .contactSocials{
+            margin-top: 32px;
+            ul{
+                display: flex;
+                padding: 0;
+            }
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 75px;
+                margin-left: 18px;
+                // justify-content: space-between;
+                height: 75px;
+                list-style: none;
+                background-color: $secondaryColor;
+                padding: 15px;
+                border-radius: 50px;
+
+            }
+        }
+
+        .leafOne{
+            position: relative;
+            top: -50%;
+            left: -80px;
+            overflow: hidden;
+        }
+    }
+    .contactUsRight{
+        width: 100%;
+        text-align: left;
+        margin-top: -128px;
+
+        h4{
+            font-size: map-get($FontSize, medium );
+            font-weight: 700;
+            color: $secondaryColor;
+        }
+        p{
+            font-size: map-get($FontSize, regular );
+
+        }
+
+        .inputFields{
+            .names{
+                display: flex;
+                gap: 10px;
+                .name{
+                    
+                    width: 50%;
+
+                    background-color: $primaryColor;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    border: 0.5px solid $textColorSecondary;
+                    .nameInput{
+                        display: flex;
+                        flex-direction: column;
+                        border: none;
+                        margin-left: 18px;
+
+
+                        input{
+                            border: none;
+                            padding: 5px;
+                            width: 100%;
+
+                        }
+                    }
+
+                }
+            }
+
+            .email{
+                display: flex;
+                margin-top: 16px;
+                width: 100%;
+                padding: 5px;
+                 border: 0.5px solid $textColorSecondary;
+                 background-color: $primaryColor;
+
+                 .emailInput{
+                    margin-left: 18px;
+
+                    input{
+                        border: none;
+                        padding: 5px;
+                        width: 100%;
+    
+                    }
+                 }
+                 
+            }
+
+            .textArea{
+
+                width: 100%;
+                padding: 5px;
+                 border: 0.5px solid $textColorSecondary;
+                 background-color: $primaryColor;
+                 margin-top: 16px;
+                 color: $textColorSecondary;
+
+                 input{
+                    border: none;
+                    width: 100%;
+                    padding: 18px;
+
+                 }
+
+                 
+                
+            }
+
+            .sendButton{
+                width: 100%;
+                background-color: $secondaryColor;
+                padding: 15px;
+                margin-top: 16px;
+                border: none;
+                color: $primaryColor;
+            }
+        }
+
+        .leadTwo{
+            position: relative;
+            top: -600px;
+            overflow: hidden;
+            left: 400px;
+            // overflow: hidden;
+        }
+    }
 }
 
 }
