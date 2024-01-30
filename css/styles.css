@@ -3545,7 +3545,7 @@
     margin: 0px;
   }
   .contactUsContainer {
-    padding: 16px;
+    padding: 8px;
     background-color: #F0F3BD;
     margin-top: 130px;
     height: auto;
@@ -3588,9 +3588,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75px;
+    width: 55px;
     margin-left: 18px;
-    height: 75px;
+    height: 55px;
     list-style: none;
     background-color: #006D77;
     padding: 15px;
