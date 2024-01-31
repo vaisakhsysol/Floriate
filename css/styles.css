@@ -1396,6 +1396,49 @@
   font-size: 12px;
 }
 
+.acadamicDetailsContainer {
+  padding: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.acadamicDetailsContainer .academicDetailsLeft {
+  padding: 10px;
+  width: 50%;
+}
+.acadamicDetailsContainer .academicDetailsLeft .top {
+  background-color: #F0F3BD;
+}
+.acadamicDetailsContainer .academicDetailsLeft .top h6 {
+  background-color: #ffffff;
+  font-weight: 600;
+  color: #023684;
+}
+.acadamicDetailsContainer .academicDetailsRight {
+  width: 50%;
+  text-align: left;
+}
+.acadamicDetailsContainer .academicDetailsRight h6 {
+  font-weight: 600;
+  color: #023684;
+}
+.acadamicDetailsContainer .academicDetailsRight .academicDetails {
+  padding: 18px;
+  background-color: #F0F3BD;
+}
+.acadamicDetailsContainer .academicDetailsRight .academicDetails p {
+  font-size: 12px;
+}
+.acadamicDetailsContainer .academicDetailsRight .academicDetails .address {
+  font-weight: 700;
+}
+.acadamicDetailsContainer .academicDetailsRight .academicDetails .register {
+  width: 100%;
+  background-color: #006D77;
+  padding: 15px;
+  border: none;
+  color: #ffffff;
+}
+
 .facultyContainer {
   padding: 0 64px;
 }

@@ -1715,6 +1715,67 @@ padding: 64px;
     }
 }
 
+.acadamicDetailsContainer{
+    padding:64px;
+    display: flex;
+    justify-content: space-between;
+
+    .academicDetailsLeft{
+        padding: 10px;
+        width: 50%;
+
+        .top{
+            background-color: $accentColor;
+
+            h6{
+                background-color: $primaryColor;
+                font-weight: 600;
+                color: $textColor;
+            }
+            
+        }
+        // background-color: $accentColor;
+
+    }
+
+    .academicDetailsRight{
+        width: 50%;
+        text-align: left;
+
+        h6{
+            font-weight: 600;
+            color: $textColor;
+        }
+
+        .academicDetails{
+            padding: 18px;
+            background-color: $accentColor;
+
+            p{
+                font-size: map-get($FontSize, small );
+            }
+
+            .tenthClass{
+
+            }
+
+            .address{
+                font-weight: 700;
+            }
+
+            .register{
+                width: 100%;
+                background-color: $secondaryColor;
+                padding: 15px;
+                border: none;
+                color: $primaryColor;
+            }
+        }
+    }
+
+
+}
+
 .facultyContainer{
     padding: 0 64px;
     .facultyHeading{
