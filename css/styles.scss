@@ -1665,6 +1665,55 @@ padding: 64px;
     }
 }
 
+.academicsHeadingContainer{
+    margin-top: 127px;
+    padding: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    .academicsHeading{
+        width: 50%;
+
+        h2{
+            font-weight: 700;
+            color: $textColor;
+
+        }
+
+        p{
+            font-size: map-get($FontSize, small );
+        }
+
+        .yellowBarr{
+            padding: 10px;
+            width: 500px;
+            background-color: $accentColor;
+            position: relative;
+            top: -68px;
+            z-index: -1;
+
+        }
+    }
+
+    .quoteCard{
+        width: 30%;
+
+        .quoteCardMain{
+            padding: 14px;
+            background-color: $accentColor;
+            border-left: 10px solid $secondaryColor;
+
+
+            .item{
+
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+            }
+
+        }
+    }
+}
 //LG Display
 
 @mixin lgDisplay {

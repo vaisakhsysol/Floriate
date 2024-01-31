@@ -1360,6 +1360,42 @@
   left: 400px;
 }
 
+.academicsHeadingContainer {
+  margin-top: 127px;
+  padding: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.academicsHeadingContainer .academicsHeading {
+  width: 50%;
+}
+.academicsHeadingContainer .academicsHeading h2 {
+  font-weight: 700;
+  color: #023684;
+}
+.academicsHeadingContainer .academicsHeading p {
+  font-size: 12px;
+}
+.academicsHeadingContainer .academicsHeading .yellowBarr {
+  padding: 10px;
+  width: 500px;
+  background-color: #F0F3BD;
+  position: relative;
+  top: -68px;
+  z-index: -1;
+}
+.academicsHeadingContainer .quoteCard {
+  width: 30%;
+}
+.academicsHeadingContainer .quoteCard .quoteCardMain {
+  padding: 14px;
+  background-color: #F0F3BD;
+  border-left: 10px solid #006D77;
+}
+.academicsHeadingContainer .quoteCard .quoteCardMain .item p {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
