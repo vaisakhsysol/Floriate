@@ -1038,7 +1038,11 @@
 .newsAndEventsMain .topNews .imageAndContent .image img {
   width: 300px;
 }
+.newsAndEventsMain .topNews .imageAndContent .content {
+  display: block !important;
+}
 .newsAndEventsMain .topNews .imageAndContent .content p {
+  color: #313131;
   line-height: 28px;
 }
 .newsAndEventsMain .topNews .imageAndContent .content p::first-letter {
@@ -3259,7 +3263,7 @@
     font-family: "Hind Siliguri", sans-serif;
   }
   .newsandeventsExStyle {
-    margin-top: -60px;
+    margin-top: -80px;
   }
   .menuExStyle {
     margin-top: -32px;
@@ -4603,7 +4607,7 @@
     font-size: 12px;
   }
   .newsandeventsExStyle {
-    margin-top: -60px;
+    margin-top: -80px;
   }
   .menuExStyle {
     margin-top: -32px;

@@ -1231,6 +1231,7 @@ padding: 64px;
                 background-color: $accentColor;
                 width: 100px;
                 border-radius: 20px;
+
                 p{
                     font-size: map-get($FontSize, small );
                     text-align: center;
@@ -1252,8 +1253,9 @@ padding: 64px;
             }
 
             .content{
+                display: block !important;
                 p{
-                 
+                    color: $textColorSecondary;
                     line-height: 28px
                 };
                 p::first-letter{
@@ -4085,7 +4087,7 @@ padding: 64px;
 }
 
 .newsandeventsExStyle{
-    margin-top: -60px;
+    margin-top: -80px;
 }
 
 .menuExStyle{
@@ -5814,7 +5816,7 @@ padding: 16px;
 
 
 .newsandeventsExStyle{
-    margin-top: -60px;
+    margin-top: -80px;
 }
 
 .menuExStyle{
