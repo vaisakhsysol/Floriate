@@ -1396,6 +1396,40 @@
   font-size: 12px;
 }
 
+.facultyContainer {
+  padding: 0 64px;
+}
+.facultyContainer .facultyHeading h5 {
+  width: 300px;
+  font-weight: 600;
+  color: #023684;
+}
+.facultyContainer .facultyHeading p {
+  font-size: 12px;
+}
+.facultyContainer .faculty {
+  margin-top: 64px;
+}
+.facultyContainer .faculty .teachersContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+.facultyContainer .faculty .teachersContainer .teacher {
+  margin-top: 16px;
+}
+.facultyContainer .faculty .teachersContainer .teacher img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.facultyContainer .faculty .teachersContainer .teacher h5 {
+  margin-top: 16px;
+}
+.facultyContainer .faculty .teachersContainer .teacher p {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1440px) {
   .heroContainer {
     padding: 64px;
