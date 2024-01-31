@@ -69,7 +69,6 @@
     justify-content: center;
     transition: all 0.5s ease;
     opacity: 1;
-    // margin-top: 32px;
     background-color: $accentColor;
     // width: 100%;
 
@@ -5272,6 +5271,57 @@ padding: 16px;
 
 @include mobileDisplay{
 
+    
+.menu{
+    display: none;
+    opacity: 0.1;
+    width: 100%;
+
+   
+//   margin: 0 2.5%;
+    // left: 500px;
+}
+
+.menu.active{
+    z-index: 5;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+    opacity: 1;
+    margin-top: 64px;
+    background-color: $accentColor;
+    // width: 100%;
+
+
+    ul{
+        width: 100%;
+        padding: 0;
+
+        li{
+            list-style: none;
+            margin-top: 12px;
+            padding: 5px;
+            text-align: center;
+            // width: 100%;
+
+            a{
+                text-decoration: none;
+                color: $textColorSecondary;
+            }
+            &:hover{
+                background-color: $primaryColor;
+                cursor: pointer;
+                 width: 100%;
+
+            }
+        }
+    }
+}
+
+.menuExStyle{
+    margin-top: -10px;
+}
 
     .navBar{
         padding: 5px 10px;
@@ -5291,6 +5341,7 @@ padding: 16px;
     }
     
     .newsandevents{
+        margin-top: 32px;
         marquee{
             font-size: map-get($FontSize, small );
             margin-right: 12px;

@@ -4158,6 +4158,43 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .menu {
+    display: none;
+    opacity: 0.1;
+    width: 100%;
+  }
+  .menu.active {
+    z-index: 5;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+    opacity: 1;
+    margin-top: 64px;
+    background-color: #F0F3BD;
+  }
+  .menu.active ul {
+    width: 100%;
+    padding: 0;
+  }
+  .menu.active ul li {
+    list-style: none;
+    margin-top: 12px;
+    padding: 5px;
+    text-align: center;
+  }
+  .menu.active ul li a {
+    text-decoration: none;
+    color: #313131;
+  }
+  .menu.active ul li:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+  }
+  .menuExStyle {
+    margin-top: -10px;
+  }
   .navBar {
     padding: 5px 10px;
   }
@@ -4169,6 +4206,9 @@
   }
   .navBar .navBarMiddle p {
     font-size: 12px;
+  }
+  .newsandevents {
+    margin-top: 32px;
   }
   .newsandevents marquee {
     font-size: 12px;
