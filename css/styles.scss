@@ -576,6 +576,59 @@
 .testimonialsContaioner{
     margin-top: 128px;
     padding: 0 64px;
+
+    .extraActivitiesHeading{
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            color: $textColor;
+            font-weight: 800;
+            margin-top: 88px;
+        } 
+    }
+
+    .testimonialsMain{
+
+        margin-top: 64px;
+        .item{
+            padding: 24px;
+            background-color: #cbcbcb8a;
+            border: 1px solid rgba(128, 128, 128, 0.412);
+
+            .userImageandNameContainer{
+                display: flex;
+                align-items: center;
+                .image{
+
+                    img{
+                        border-radius: 50px;
+                        width: 100px;
+                    }
+                }
+                .name{
+                    margin-left: 32px;
+
+                    h5{
+                        color: $textColor;
+                    }
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .headingAndDesc{
+                margin-top: 48px;
+
+                h5{
+                    color: $textColor;
+                }
+                p{
+                    font-size: map-get($FontSize, small );
+                }
+            }
+        }
+    }
 }
 .newsandevents{
     z-index: 5;
